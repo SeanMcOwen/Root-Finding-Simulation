@@ -1,5 +1,11 @@
 ## System Diagram
 
+```mermaid
+graph LR
+I[Initialization]-->SM[State Metric]
+I[Initialization]-->IC[Iteration Controller]
+```
+
 ## State
 
 1. x: The current value for x, a scalar variable
@@ -35,3 +41,17 @@ None
 - computation_time: The amount of time a computation took
 - action_name: The name of the action associated with the computation, i.e. calculate_f_prime or root_finding
 2. state_metric: The metric for saving checkpoints of where the state is; holds all variables in the state at that point in time
+
+## Blocks
+
+### Initialization Block
+
+The block which initializes the simulation and sets the simulation time/kicks off simulation
+
+### State Metric Block
+
+The block which records a state metric
+
+### Iteration Controller Block
+
+The block in charge of deciding if more iterations happen or if the simulation
