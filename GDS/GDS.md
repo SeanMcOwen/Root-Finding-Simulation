@@ -1,7 +1,7 @@
 ## System Diagram
 
 ```mermaid
-graph LR
+graph
 IN[Initialization]-->Y1[Calculate Y]
 IN-->YP1[Calculate Y Prime]
 IN-->SIS1[Set Iteration Step]
