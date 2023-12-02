@@ -2,9 +2,9 @@
 
 ## State
 
-1. $x$: The current value for x, a scalar variable
-2. $y$: The current value for y, the dependent variable
-3. $iteration_step$: The value for the iteration which the algorithm is on
+1. x: The current value for x, a scalar variable
+2. y: The current value for y, the dependent variable
+3. iteration_step: The value for the iteration which the algorithm is on
 
 ## Parameters
 
@@ -18,3 +18,11 @@
 None
 
 ### Functional
+
+1. f: The function which is being minimized
+2. f_prime: The derivative of the minimized function
+3. root_finding_method: The root finding method utilized, which can be of the types:
+- Bisection
+- Newton
+- Secant
+- Steffensen
