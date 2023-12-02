@@ -5,6 +5,7 @@
 1. x: The current value for x, a scalar variable
 2. y: The current value for y, the dependent variable
 3. iteration_step: The value for the iteration which the algorithm is on
+4. simulation_time: The current simulation time in seconds, starting at 0 in simulation run time beginning
 
 ## Parameters
 
@@ -26,3 +27,10 @@ None
 - Newton
 - Secant
 - Steffensen
+
+## Metrics
+
+1. computation_time_metric: The metric for tracking of the amount of time for computation of different steps in the simulation, composed of:
+- simulation_time: The time of the simulation at the end of computation
+- computation_time: The amount of time a computation took
+- action_name: The name of the action associated with the computation, i.e. calculate_f_prime or root_finding
