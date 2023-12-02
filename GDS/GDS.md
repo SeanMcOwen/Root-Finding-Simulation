@@ -2,14 +2,24 @@
 
 ```mermaid
 graph LR
-I[Initialization]-->Y1[Calculate Y]
-I-->YP1[Calculate Y Prime]
-I-->SIS1[Set Iteration Step]
+IN[Initialization]-->Y1[Calculate Y]
+IN-->YP1[Calculate Y Prime]
+IN-->SIS1[Set Iteration Step]
 Y1-->SST1[Set Simulation Time]
 YP1-->SST1
 SIS1-->SST1
-SST1-->SM1[State Metric]
+SST1-->SM1[(State Metric)]
 SM1-->IC[Iteration Controller]
+IC-.->I[Iteration]
+I-->CT1[(Computation Time Metric)]
+I-->Y2[Calculate Y]
+Y2-->CT2[(Computation Time Metric)]
+Y2-->YP2[Calculate Y Prime]
+YP2-->CT3[(Computation Time Metric)]
+YP2-->SIS2[Set Iteration Step]
+SIS2-->SST2[Set Simulation Time]
+SST2-->SM2[(State Metric)]
+SST2-->IC
 ```
 
 ## State
@@ -78,3 +88,7 @@ Block for updating the current iteration step
 ### Set Simulation Time Block
 
 Block for updating the current simulation time
+
+### Iteration Block
+
+The block which modifies the x variable based on the root finding method
