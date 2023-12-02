@@ -2,16 +2,23 @@
 
 ```mermaid
 graph LR
-I[Initialization]-->SM[State Metric]
-I[Initialization]-->IC[Iteration Controller]
+I[Initialization]-->Y1[Calculate Y]
+I-->YP1[Calculate Y Prime]
+I-->SIS1[Set Iteration Step]
+Y1-->SST1[Set Simulation Time]
+YP1-->SST1
+SIS1-->SST1
+SST1-->SM1[State Metric]
+SM1-->IC[Iteration Controller]
 ```
 
 ## State
 
 1. x: The current value for x, a scalar variable
-2. y: The current value for y, the dependent variable
-3. iteration_step: The value for the iteration which the algorithm is on
-4. simulation_time: The current simulation time in datetime, assigned at simulation start
+2. y: The current value for y, the dependent variable, starts as None
+3. y_prime: The current value for the derivative of y, starts as None
+4. iteration_step: The value for the iteration which the algorithm is on, starts as 0
+5. simulation_time: The current simulation time in datetime, assigned at simulation start
 
 ## Parameters
 
@@ -55,3 +62,19 @@ The block which records a state metric
 ### Iteration Controller Block
 
 The block in charge of deciding if more iterations happen or if the simulation
+
+### Calculate Y Block
+
+The block for calculation of the y value
+
+### Calculate Y Prime Block
+
+The block for calculation of the y prime value
+
+### Set Iteration Step Block
+
+Block for updating the current iteration step
+
+### Set Simulation Time Block
+
+Block for updating the current simulation time
