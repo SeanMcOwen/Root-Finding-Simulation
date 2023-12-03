@@ -1,6 +1,7 @@
 from .Dummy import dummy_space1, dummy_space2, none_space
 from .Initialization import initialization_space
 from .Iteration import update_x_space
+from .Metrics import computation_time_metric_space
 
 spaces = {"Dummy Space 1": dummy_space1,
           "Dummy Space 2": dummy_space2,

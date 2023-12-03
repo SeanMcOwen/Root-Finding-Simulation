@@ -1,8 +1,8 @@
-from ..Spaces import dummy_space2
+from ..Spaces import computation_time_metric_space
 
-dummy_mechanism = {"name": "Dummy Mechanism",
-                           "description": "Dummy Mechanism",
-                           "constraints": ["Constaint 1"],
-                           "logic": "Logic for update",
-                           "domain": [dummy_space2],
+log_computation_time_metric_mechanism = {"name": "Log Computation Time Metric Mechanism",
+                           "description": "The computation time metric is logged here",
+                           "constraints": [],
+                           "logic": "",
+                           "domain": [computation_time_metric_space],
                            "parameters_used": []}

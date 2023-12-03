@@ -6,5 +6,4 @@ RootFindingMethodType = NewType("Root Finding Method Type", Union["Bisection", "
 ObjectiveFunctionType = NewType("Objective Function Type", callable)
 ObjectiveFunctionDerivativeType = NewType("Objective Function Derivative Type", callable)
 XType = NewType("X Type", float)
-
-
+SecondsType = NewType("Seconds Type", float)

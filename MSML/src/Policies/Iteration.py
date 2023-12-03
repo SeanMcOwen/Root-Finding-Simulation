@@ -23,4 +23,22 @@ iteration_policy = {"name": "Iteration Policy",
                         "policy_options": [],
                         "domain": [],
                         "codomain": [],
-                        "parameters_used": ["f", "f_prime", "root_finding_method"]}
+                        "parameters_used": ["root_finding_method"]}
+
+
+calculate_y_policy = {"name": "Calculate Y Policy",
+                        "description": "The policy which calculates the value for f.",
+                        "constraints": [],
+                        "policy_options": [],
+                        "domain": [],
+                        "codomain": [],
+                        "parameters_used": ["f"]}
+
+calculate_y_prime_policy = {"name": "Calculate Y Prime Policy",
+                        "description": "The policy which calculates the value for the derivative of f.",
+                        "constraints": [],
+                        "policy_options": [],
+                        "domain": [],
+                        "codomain": [],
+                        "parameters_used": ["f_prime"]}
+
