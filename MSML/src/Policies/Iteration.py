@@ -15,3 +15,12 @@ iteration_controller_policy = {"name": "Iteration Controller Policy",
                         "domain": [],
                         "codomain": [],
                         "parameters_used": ["max_iterations"]}
+
+
+iteration_policy = {"name": "Iteration Policy",
+                        "description": "The policy which produces one iteration of the root finding algorithm.",
+                        "constraints": [],
+                        "policy_options": [],
+                        "domain": [],
+                        "codomain": [],
+                        "parameters_used": ["f", "f_prime", "root_finding_method"]}

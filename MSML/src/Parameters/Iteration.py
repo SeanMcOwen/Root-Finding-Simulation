@@ -1,4 +1,4 @@
-from ..Types import NumberOfIterationsType, ObjectiveValueType
+from ..Types import NumberOfIterationsType, ObjectiveValueType, RootFindingMethodType, ObjectiveFunctionType, ObjectiveFunctionDerivativeType
 
 iteration_parameter_set = {"name": "Dummy Parameter Set",
                        "notes": "",
@@ -13,4 +13,25 @@ iteration_parameter_set = {"name": "Dummy Parameter Set",
                                        "description": "The tolerance to determine if iteartions can stop",
                                        "symbol": None,
                                        "domain": None
+                                       },
+                                       {"variable_type": ObjectiveFunctionType,
+                                       "name": "f",
+                                       "description": "The objective function",
+                                       "symbol": None,
+                                       "domain": None
+                                       },
+                                       {"variable_type": ObjectiveFunctionDerivativeType,
+                                       "name": "f_prime",
+                                       "description": "The objective function derivative",
+                                       "symbol": None,
+                                       "domain": None
+                                       },
+                                       {"variable_type": RootFindingMethodType,
+                                       "name": "root_finding_method",
+                                       "description": "The functional parameterization for the root finding method to use",
+                                       "symbol": None,
+                                       "domain": None
                                        }]}
+
+
+

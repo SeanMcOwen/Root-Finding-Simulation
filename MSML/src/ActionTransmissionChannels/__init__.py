@@ -1,6 +1,8 @@
 from .Dummy import dummy_transmission_channels
 from .Initialization import  initialization_transmission_channels
+from .Iteration import iteration_transmission_channels
 
 action_transmission_channels = []
 action_transmission_channels.extend(dummy_transmission_channels)
 action_transmission_channels.extend(initialization_transmission_channels)
+action_transmission_channels.extend(iteration_transmission_channels)
