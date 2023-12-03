@@ -30,6 +30,9 @@ SST2-->IC
 4. iteration_step: The value for the iteration which the algorithm is on, starts as 0
 5. simulation_time: The current simulation time in datetime, assigned at simulation start
 
+## Stateful Metrics
+1. objective_value: The absolute value of y, which signifies the objective function we are trying to minimize to 0
+
 ## Parameters
 
 ### System
