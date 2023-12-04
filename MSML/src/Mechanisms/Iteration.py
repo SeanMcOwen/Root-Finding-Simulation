@@ -19,7 +19,7 @@ update_y_mechanism = {
 }
 
 update_y_prime_mechanism = {
-    "name": "Update X",
+    "name": "Update Y Prime",
     "description": "Mechanism for an update to the y_prime value",
     "constraints": [],
     "logic": "",

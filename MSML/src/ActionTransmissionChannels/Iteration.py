@@ -69,3 +69,21 @@ iteration_transmission_channels.append(
         "optional": False,
     }
 )
+
+iteration_transmission_channels.append(
+    {
+        "origin": "Calculate Y Policy",
+        "target": "Update Y Mechanism",
+        "space": dummy_space1,
+        "optional": False,
+    }
+)
+
+iteration_transmission_channels.append(
+    {
+        "origin": "Calculate Y Prime Policy",
+        "target": "Update Y Prime Mechanism",
+        "space": dummy_space1,
+        "optional": False,
+    }
+)
