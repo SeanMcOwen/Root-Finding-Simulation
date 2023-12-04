@@ -1,4 +1,4 @@
-from ..Spaces import update_x_space, dummy_space1
+from ..Spaces import update_x_space, dummy_space1, update_y_space, update_y_prime_space
 
 update_x_mechanism = {
     "name": "Update X",
@@ -6,6 +6,24 @@ update_x_mechanism = {
     "constraints": [],
     "logic": "",
     "domain": [update_x_space],
+    "parameters_used": [],
+}
+
+update_y_mechanism = {
+    "name": "Update Y",
+    "description": "Mechanism for an update to the y value",
+    "constraints": [],
+    "logic": "",
+    "domain": [update_y_space],
+    "parameters_used": [],
+}
+
+update_y_prime_mechanism = {
+    "name": "Update X",
+    "description": "Mechanism for an update to the y_prime value",
+    "constraints": [],
+    "logic": "",
+    "domain": [update_y_prime_space],
     "parameters_used": [],
 }
 
