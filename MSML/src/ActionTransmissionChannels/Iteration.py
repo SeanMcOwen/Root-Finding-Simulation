@@ -2,6 +2,7 @@ from ..Spaces import (
     none_space,
     update_x_space,
     computation_time_metric_space,
+    state_metric_space,
     dummy_space1,
 )
 
@@ -46,11 +47,30 @@ iteration_transmission_channels.append(
 iteration_transmission_channels.append(
     {
         "origin": "Calculate Y Policy",
+        "target": "Log Computation Time Metric Mechanism",
+        "space": computation_time_metric_space,
+        "optional": False,
+    }
+)
+
+iteration_transmission_channels.append(
+    {
+        "origin": "Calculate Y Policy",
         "target": "Calculate Y Prime Policy",
         "space": dummy_space1,
         "optional": False,
     }
 )
+
+iteration_transmission_channels.append(
+    {
+        "origin": "Calculate Y Prime Policy",
+        "target": "Log Computation Time Metric Mechanism",
+        "space": computation_time_metric_space,
+        "optional": False,
+    }
+)
+
 
 iteration_transmission_channels.append(
     {
@@ -84,6 +104,24 @@ iteration_transmission_channels.append(
         "origin": "Calculate Y Prime Policy",
         "target": "Update Y Prime Mechanism",
         "space": dummy_space1,
+        "optional": False,
+    }
+)
+
+iteration_transmission_channels.append(
+    {
+        "origin": "Calculate Y Prime Policy",
+        "target": "Log State Metric Mechanism",
+        "space": state_metric_space,
+        "optional": False,
+    }
+)
+
+iteration_transmission_channels.append(
+    {
+        "origin": "Calculate Y Prime Policy",
+        "target": "Iteration Controller Policy",
+        "space": none_space,
         "optional": False,
     }
 )

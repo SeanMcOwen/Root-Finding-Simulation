@@ -6,7 +6,7 @@ from .Iteration import (
     update_y_mechanism,
     update_y_prime_mechanism,
 )
-from .Metrics import log_computation_time_metric_mechanism
+from .Metrics import log_computation_time_metric_mechanism, log_state_metric_mechanism
 
 mechanism = {
     "Dummy Mechanism": dummy_mechanism,
@@ -16,4 +16,5 @@ mechanism = {
     "Set Simulation Time Mechanism": set_simulation_time_mechanism,
     "Update Y Mechanism": update_y_mechanism,
     "Update Y Prime Mechanism": update_y_prime_mechanism,
+    "Log State Metric Mechanism": log_state_metric_mechanism,
 }
