@@ -38,7 +38,7 @@ calculate_y_policy = {
     "constraints": [],
     "policy_options": [],
     "domain": (),
-    "codomain": (),
+    "codomain": ("Update Y Space", "Computation Time Metric Space"),
     "parameters_used": ["f"],
 }
 
