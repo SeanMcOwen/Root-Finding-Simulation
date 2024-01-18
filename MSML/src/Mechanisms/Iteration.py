@@ -30,7 +30,7 @@ increment_iteration_step_mechanism = {
     "description": "Mechanism for incrementing the iteration step by 1",
     "constraints": [],
     "logic": "state['iteration_step'] += 1",
-    "domain": ("None Space",),
+    "domain": (),
     "parameters_used": [],
 }
 
@@ -39,6 +39,6 @@ set_simulation_time_mechanism = {
     "description": "Mechanism for setting the current time of the simulation",
     "constraints": [],
     "logic": "state['simulation_time'] = now()",
-    "domain": ("None Space",),
+    "domain": (),
     "parameters_used": [],
 }

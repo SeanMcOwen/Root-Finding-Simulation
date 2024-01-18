@@ -1,7 +1,7 @@
-calculate_y_wiring = []
+calculate_y_prime_wiring = []
 
 
-calculate_y_wiring.append(
+calculate_y_prime_wiring.append(
     {
         "name": "Calculate Y Prime Parallel Block",
         "components": [
@@ -14,7 +14,7 @@ calculate_y_wiring.append(
     }
 )
 
-calculate_y_wiring.append(
+calculate_y_prime_wiring.append(
     {
         "name": "Calculate Y Prime Block",
         "components": ["Calculate Y Prime Policy", "Calculate Y Prime Parallel Block"],
