@@ -27,7 +27,7 @@ iteration_policy = {
     "constraints": [],
     "policy_options": [],
     "domain": (),
-    "codomain": (),
+    "codomain": ("Update X Space", "Computation Time Metric Space"),
     "parameters_used": ["root_finding_method"],
 }
 
