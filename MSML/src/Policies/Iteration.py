@@ -48,6 +48,6 @@ calculate_y_prime_policy = {
     "constraints": [],
     "policy_options": [],
     "domain": (),
-    "codomain": (),
+    "codomain": ("Update Y Prime Space", "Computation Time Metric Space"),
     "parameters_used": ["f_prime"],
 }
