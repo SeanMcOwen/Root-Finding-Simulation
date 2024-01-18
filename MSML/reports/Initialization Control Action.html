@@ -1,4 +1,4 @@
-<p>For explanations of generalized dynamical systems as well as how the mathematical specification library works in detail, please consult the documentation <a href="https://github.com/BlockScience/MSML/tree/main/docs">here</a></p>Graph Legend:<br/>Cylinder: Entity<br/>Orange Diamond: Boundary Action<br/>Red Square: Policy<br/>Blue Circle: Mechanism<br/>Transparent Circle: State Variable<h2>Action Maps</h2><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p>For explanations of generalized dynamical systems as well as how the mathematical specification library works in detail, please consult the documentation <a href="https://github.com/BlockScience/MSML/tree/main/docs">here</a></p>Graph Legend:<br/>Cylinder: Entity<br/>Orange Diamond: Boundary Action<br/>Red Square: Policy<br/>Blue Circle: Mechanism<br/>Transparent Circle: State Variable<h2>Action Map</h2><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 
@@ -379,14 +379,7 @@
 </g>
 
 </svg>
-<h2>State</h2><h3>Local States</h3><h4>Dummy State</h4><table>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Symbol</th>
-        <th>Domain</th>
-      </tr><tr><td>Variable A</td><td>Variable A</td><td>Dummy Compound Type</td><td></td><td></td></tr><tr><td>Variable B</td><td>Variable B</td><td>Dummy Type 1</td><td></td><td></td></tr><tr><td>Variable C</td><td>Variable C</td><td>Dummy Type 2</td><td></td><td></td></tr></table><h2>Spaces</h2><h3>Initialization Space</h3><p>{}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h3>None Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: datetime,<br/>computation_time: Seconds Type,<br/>action_name: str}</p><h3>State Metric Space</h3><p>{simulation_time: datetime,<br/>x: X Type,<br/>y: Objective Value Type,<br/>y_prime: Objective Derivative Value Type,<br/>iteration_step: int}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
+<h2>State</h2><h3>Local States</h3><h2>Spaces</h2><h3>Initialization Space</h3><p>{}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
 <h2>Policies</h2><h3>Iteration Controller Policy</h3><p>The policy which controls whether another iteration should take place in a simulation.</p><h4>Preceded By:</h4>
 <p>1. Initialization Control Action</p><p>2. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
 <h4>Followed By:</h4>
@@ -418,6 +411,11 @@
 <p>1. Computation Time Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
+<p></p><h3>Update Y Mechanism</h3><p>Mechanism for an update to the y value</p><h4>Preceded By:</h4>
+<p>1. Calculate Y Policy</p><h4>Domain Spaces:</h4>
+<p>1. Update Y Space</p><h4>State Updates:</h4>
+<h4>Constraints:</h4>
+<h4>Logic:</h4>
 <p></p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
 <p>1. None Space</p><h4>State Updates:</h4>
@@ -428,12 +426,7 @@
 <p>1. None Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p>state['simulation_time'] = now()</p><h3>Update Y Mechanism</h3><p>Mechanism for an update to the y value</p><h4>Preceded By:</h4>
-<p>1. Calculate Y Policy</p><h4>Domain Spaces:</h4>
-<p>1. Update Y Space</p><h4>State Updates:</h4>
-<h4>Constraints:</h4>
-<h4>Logic:</h4>
-<p></p><h3>Update Y Prime Mechanism</h3><p>Mechanism for an update to the y_prime value</p><h4>Preceded By:</h4>
+<p>state['simulation_time'] = now()</p><h3>Update Y Prime Mechanism</h3><p>Mechanism for an update to the y_prime value</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
 <p>1. Update Y Prime Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
@@ -443,4 +436,4 @@
 <p>1. State Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h2>Parameters</h2><p>max_iterations</p><p>tolerance</p><p>f</p><p>f_prime</p><p>root_finding_method</p>
+<p></p><h2>Parameters</h2><p>root_finding_method</p><p>f_prime</p><p>f</p><p>max_iterations</p>

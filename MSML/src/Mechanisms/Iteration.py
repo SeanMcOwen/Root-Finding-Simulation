@@ -1,5 +1,5 @@
 update_x_mechanism = {
-    "name": "Update X",
+    "name": "Update X Mechanism",
     "description": "Mechanism for update to the x value",
     "constraints": [],
     "logic": "",
@@ -8,7 +8,7 @@ update_x_mechanism = {
 }
 
 update_y_mechanism = {
-    "name": "Update Y",
+    "name": "Update Y Mechanism",
     "description": "Mechanism for an update to the y value",
     "constraints": [],
     "logic": "",
@@ -17,7 +17,7 @@ update_y_mechanism = {
 }
 
 update_y_prime_mechanism = {
-    "name": "Update Y Prime",
+    "name": "Update Y Prime Mechanism",
     "description": "Mechanism for an update to the y_prime value",
     "constraints": [],
     "logic": "",
