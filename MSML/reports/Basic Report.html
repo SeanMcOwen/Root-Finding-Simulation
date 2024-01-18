@@ -397,17 +397,17 @@
 <p>1. Iteration Controller Policy</p><h4>Domain Spaces:</h4>
 <h4>Followed By:</h4>
 <p>1. Update X Mechanism</p><p>2. Log Computation Time Metric Mechanism</p><p>3. Calculate Y Policy</p><h4>Codomain Spaces:</h4>
-<h4>Constraints:</h4>
+<p>1. Update X Space</p><p>2. Computation Time Metric Space</p><h4>Constraints:</h4>
 <h3>Calculate Y Policy</h3><p>The policy which calculates the value for f.</p><h4>Preceded By:</h4>
 <p>1. Iteration Policy</p><h4>Domain Spaces:</h4>
 <h4>Followed By:</h4>
 <p>1. Log Computation Time Metric Mechanism</p><p>2. Calculate Y Prime Policy</p><p>3. Update Y Mechanism</p><h4>Codomain Spaces:</h4>
-<h4>Constraints:</h4>
+<p>1. Update Y Space</p><p>2. Computation Time Metric Space</p><h4>Constraints:</h4>
 <h3>Calculate Y Prime Policy</h3><p>The policy which calculates the value for the derivative of f.</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Policy</p><h4>Domain Spaces:</h4>
 <h4>Followed By:</h4>
 <p>1. Log Computation Time Metric Mechanism</p><p>2. Increment Iteration Step Mechanism</p><p>3. Set Simulation Time Mechanism</p><p>4. Update Y Prime Mechanism</p><p>5. Log State Metric Mechanism</p><p>6. Iteration Controller Policy</p><h4>Codomain Spaces:</h4>
-<h4>Constraints:</h4>
+<p>1. Update Y Prime Space</p><p>2. Computation Time Metric Space</p><h4>Constraints:</h4>
 <h2>Mechanisms</h2><h3>Update X Mechanism</h3><p>Mechanism for update to the x value</p><h4>Preceded By:</h4>
 <p>1. Iteration Policy</p><h4>Domain Spaces:</h4>
 <p>1. Update X Space</p><h4>State Updates:</h4>
@@ -420,12 +420,12 @@
 <h4>Logic:</h4>
 <p></p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
-<p>1. None Space</p><h4>State Updates:</h4>
+<h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
 <p>state['iteration_step'] += 1</p><h3>Set Simulation Time Mechanism</h3><p>Mechanism for setting the current time of the simulation</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
-<p>1. None Space</p><h4>State Updates:</h4>
+<h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
 <p>state['simulation_time'] = now()</p><h3>Update Y Mechanism</h3><p>Mechanism for an update to the y value</p><h4>Preceded By:</h4>
