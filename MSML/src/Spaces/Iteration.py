@@ -9,6 +9,11 @@ update_x_space = {
     },
 }
 
+none_space = {
+    "name": "None Space",
+    "schema": {},
+}
+
 
 update_y_space = {
     "name": "Update Y Space",
@@ -24,4 +29,4 @@ update_y_prime_space = {
     },
 }
 
-iteration_spaces = [update_x_space, update_y_space, update_y_prime_space]
+iteration_spaces = [update_x_space, update_y_space, update_y_prime_space, none_space]
