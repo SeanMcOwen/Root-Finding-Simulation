@@ -1,4 +1,5 @@
-from typing import TypedDict
-
-
-initialization_space = TypedDict("Initialization Space", {})
+initialization_space = {
+    "name": "Initialization Space",
+    "schema": {},
+}
+initialization_spaces = [initialization_space]
