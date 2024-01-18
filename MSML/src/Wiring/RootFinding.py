@@ -1,9 +1,14 @@
 root_finding_blocks = []
 root_finding_blocks.append(
     {
-        "name": "Calculate Y Prime Block",
-        "components": ["Calculate Y Prime Policy", "Calculate Y Prime Parallel Block"],
-        "description": "Block which calculates and updates the Y prime value.",
+        "name": "Root Finding Block",
+        "components": [
+            "Iteration Controller Policy",
+            "Iteration Block",
+            "Calculate Dependent Variables Block",
+            "Set Simulation Time Mechanism",
+        ],
+        "description": "Block which handles all aspects of using the root finding algorithm.",
         "constraints": [],
         "type": "Stack",
     }
