@@ -3,6 +3,6 @@ initialization_control_action = {
     "description": "Control action to begin the simulation",
     "constraints": [],
     "control_action_options": [],
-    "codomain": ("Initialization Space",),
+    "codomain": ("Update X Space",),
     "parameters_used": [],
 }
