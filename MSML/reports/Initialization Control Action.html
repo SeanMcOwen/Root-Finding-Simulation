@@ -379,26 +379,26 @@
 </g>
 
 </svg>
-<h2>State</h2><h3>Local States</h3><h2>Spaces</h2><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: datetime,<br/>computation_time: Seconds Type,<br/>action_name: str}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
+<h2>State</h2><h3>Local States</h3><h2>Spaces</h2><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Empty Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: datetime,<br/>computation_time: Seconds Type,<br/>action_name: str}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
 <h2>Policies</h2><h3>Iteration Controller Policy</h3><p>The policy which controls whether another iteration should take place in a simulation.</p><h4>Preceded By:</h4>
 <p>1. Initialization Control Action</p><p>2. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
-<h4>Followed By:</h4>
+<p>1. Empty Space</p><h4>Followed By:</h4>
 <p>1. Iteration Policy</p><h4>Codomain Spaces:</h4>
-<h4>Constraints:</h4>
+<p>1. Empty Space</p><h4>Constraints:</h4>
 <h4>Policy Options:</h4>
 <details><summary><b>1. Constant Iterations Policy Option</b></summary><p>A policy option which runs a constant number of iterations for any simulation.</p><p>Logic: If state["iteration_step"] < params["max_iterations"], call the iteration policy, otherwise terminate</p></details><details><summary><b>2. Tolerance Policy Option</b></summary><p>A policy option which runs a constant number of iterations for any simulation unless abs(y) is less than a tolerance.</p><p>Logic: If state["iteration_step"] < params["max_iterations"] and abs(state["y"]) > params["tolerance"], call the iteration policy, otherwise terminate</p></details><br/><h3>Iteration Policy</h3><p>The policy which produces one iteration of the root finding algorithm.</p><h4>Preceded By:</h4>
 <p>1. Iteration Controller Policy</p><h4>Domain Spaces:</h4>
-<h4>Followed By:</h4>
+<p>1. Empty Space</p><h4>Followed By:</h4>
 <p>1. Update X Mechanism</p><p>2. Log Computation Time Metric Mechanism</p><p>3. Calculate Y Policy</p><h4>Codomain Spaces:</h4>
 <p>1. Update X Space</p><p>2. Computation Time Metric Space</p><h4>Constraints:</h4>
 <h3>Calculate Y Policy</h3><p>The policy which calculates the value for f.</p><h4>Preceded By:</h4>
 <p>1. Iteration Policy</p><h4>Domain Spaces:</h4>
-<h4>Followed By:</h4>
+<p>1. Empty Space</p><h4>Followed By:</h4>
 <p>1. Log Computation Time Metric Mechanism</p><p>2. Calculate Y Prime Policy</p><p>3. Update Y Mechanism</p><h4>Codomain Spaces:</h4>
 <p>1. Update Y Space</p><p>2. Computation Time Metric Space</p><h4>Constraints:</h4>
 <h3>Calculate Y Prime Policy</h3><p>The policy which calculates the value for the derivative of f.</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Policy</p><h4>Domain Spaces:</h4>
-<h4>Followed By:</h4>
+<p>1. Empty Space</p><h4>Followed By:</h4>
 <p>1. Log Computation Time Metric Mechanism</p><p>2. Increment Iteration Step Mechanism</p><p>3. Set Simulation Time Mechanism</p><p>4. Update Y Prime Mechanism</p><p>5. Log State Metric Mechanism</p><p>6. Iteration Controller Policy</p><h4>Codomain Spaces:</h4>
 <p>1. Update Y Prime Space</p><p>2. Computation Time Metric Space</p><h4>Constraints:</h4>
 <h2>Mechanisms</h2><h3>Update X Mechanism</h3><p>Mechanism for update to the x value</p><h4>Preceded By:</h4>
@@ -418,12 +418,12 @@
 <h4>Logic:</h4>
 <p></p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
-<h4>State Updates:</h4>
+<p>1. Empty Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
 <p>state['iteration_step'] += 1</p><h3>Set Simulation Time Mechanism</h3><p>Mechanism for setting the current time of the simulation</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
-<h4>State Updates:</h4>
+<p>1. Empty Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
 <p>state['simulation_time'] = now()</p><h3>Update Y Prime Mechanism</h3><p>Mechanism for an update to the y_prime value</p><h4>Preceded By:</h4>
@@ -436,4 +436,4 @@
 <p>1. State Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h2>Parameters</h2><p>f_prime</p><p>max_iterations</p><p>f</p><p>root_finding_method</p>
+<p></p><h2>Parameters</h2><p>max_iterations</p><p>root_finding_method</p><p>f</p><p>f_prime</p>

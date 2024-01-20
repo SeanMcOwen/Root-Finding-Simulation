@@ -15,8 +15,8 @@ iteration_controller_policy = {
     "description": "The policy which controls whether another iteration should take place in a simulation.",
     "constraints": [],
     "policy_options": [constant_iters, tolerance_stopping],
-    "domain": (),
-    "codomain": (),
+    "domain": ("Empty Space",),
+    "codomain": ("Empty Space",),
     "parameters_used": ["max_iterations"],
 }
 
@@ -26,7 +26,7 @@ iteration_policy = {
     "description": "The policy which produces one iteration of the root finding algorithm.",
     "constraints": [],
     "policy_options": [],
-    "domain": (),
+    "domain": ("Empty Space",),
     "codomain": ("Update X Space", "Computation Time Metric Space"),
     "parameters_used": ["root_finding_method"],
 }
@@ -37,7 +37,7 @@ calculate_y_policy = {
     "description": "The policy which calculates the value for f.",
     "constraints": [],
     "policy_options": [],
-    "domain": (),
+    "domain": ("Empty Space",),
     "codomain": ("Update Y Space", "Computation Time Metric Space"),
     "parameters_used": ["f"],
 }
@@ -47,7 +47,7 @@ calculate_y_prime_policy = {
     "description": "The policy which calculates the value for the derivative of f.",
     "constraints": [],
     "policy_options": [],
-    "domain": (),
+    "domain": ("Empty Space",),
     "codomain": ("Update Y Prime Space", "Computation Time Metric Space"),
     "parameters_used": ["f_prime"],
 }
