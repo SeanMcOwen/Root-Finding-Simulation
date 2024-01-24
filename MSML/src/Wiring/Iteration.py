@@ -9,6 +9,7 @@ iteration_wiring.append(
         "description": "Block which updates X and logs the computation time taken.",
         "constraints": [],
         "type": "Parallel",
+        "mermaid_show_name": False,
     }
 )
 iteration_wiring.append(

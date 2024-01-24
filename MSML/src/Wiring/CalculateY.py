@@ -8,6 +8,7 @@ calculate_y_wiring.append(
         "description": "Block which updates the Y value and logs the computation time it took from calculate Y policy.",
         "constraints": [],
         "type": "Parallel",
+        "mermaid_show_name": False,
     }
 )
 

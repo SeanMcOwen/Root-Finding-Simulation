@@ -11,6 +11,7 @@ calculate_y_prime_wiring.append(
         "description": "Block which updates the Y prime value and logs the computation time it took from calculate Y prime policy.",
         "constraints": [],
         "type": "Parallel",
+        "mermaid_show_name": False,
     }
 )
 
