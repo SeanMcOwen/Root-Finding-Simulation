@@ -11,5 +11,7 @@ root_finding_blocks.append(
         "description": "Block which handles all aspects of using the root finding algorithm.",
         "constraints": [],
         "type": "Stack",
+        "loop": True,
+        "optional_indices": [0],
     }
 )
