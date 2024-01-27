@@ -70,7 +70,14 @@
         <th>Type</th>
         <th>Symbol</th>
         <th>Domain</th>
-      </tr><tr><td>Variable A</td><td>Variable A</td><td>Dummy Compound Type</td><td></td><td></td></tr><tr><td>Variable B</td><td>Variable B</td><td>Dummy Type 1</td><td></td><td></td></tr><tr><td>Variable C</td><td>Variable C</td><td>Dummy Type 2</td><td></td><td></td></tr></table><h2>Spaces</h2><h3>Terminating Space</h3><p>{}</p><h3>Empty Space</h3><p>{}</p><h3>Initialization Space</h3><p>{}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h3>None Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: datetime,<br/>computation_time: Seconds Type,<br/>action_name: str}</p><h3>State Metric Space</h3><p>{simulation_time: datetime,<br/>x: X Type,<br/>y: Objective Value Type,<br/>y_prime: Objective Derivative Value Type,<br/>iteration_step: int}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
+      </tr><tr><td>Variable A</td><td>Variable A</td><td>Dummy Compound Type</td><td></td><td></td></tr><tr><td>Variable B</td><td>Variable B</td><td>Dummy Type 1</td><td></td><td></td></tr><tr><td>Variable C</td><td>Variable C</td><td>Dummy Type 2</td><td></td><td></td></tr></table><h4>Global State</h4><table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Symbol</th>
+        <th>Domain</th>
+      </tr></table><h2>Spaces</h2><h3>Terminating Space</h3><p>{}</p><h3>Empty Space</h3><p>{}</p><h3>Initialization Space</h3><p>{}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h3>None Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: datetime,<br/>computation_time: Seconds Type,<br/>action_name: str}</p><h3>State Metric Space</h3><p>{simulation_time: datetime,<br/>x: X Type,<br/>y: Objective Value Type,<br/>y_prime: Objective Derivative Value Type,<br/>iteration_step: int}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
 <h2>Policies</h2><h3>Iteration Controller Policy</h3><p>The policy which controls whether another iteration should take place in a simulation.</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>
 <p>1. Empty Space</p><h4>Followed By:</h4>
@@ -127,4 +134,4 @@
 <p>1. State Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h2>Parameters</h2><p>max_iterations</p><p>tolerance</p><p>f</p><p>f_prime</p><p>root_finding_method</p>
+<p></p><h2>Parameters</h2><h3>max_iterations</h3><p>Description: The maximum number of iterations for the simulation</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: system</p><h3>tolerance</h3><p>Description: The tolerance to determine if iteartions can stop</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: system</p><h3>f</h3><p>Description: The objective function</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: behavioral</p><h3>f_prime</h3><p>Description: The objective function derivative</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: behavioral</p><h3>root_finding_method</h3><p>Description: The functional parameterization for the root finding method to use</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: functional</p>
