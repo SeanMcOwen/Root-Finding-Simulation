@@ -12,5 +12,6 @@ root_finding_blocks.append(
         "constraints": [],
         "type": "Stack",
         "loop": True,
+        "optional_indices": [0],
     }
 )
