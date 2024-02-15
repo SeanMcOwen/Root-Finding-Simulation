@@ -5,6 +5,7 @@ update_x_mechanism = {
     "logic": "",
     "domain": ("Update X Space",),
     "parameters_used": [],
+    "updates": [("Global State", "X", False)],
 }
 
 update_y_mechanism = {
@@ -14,6 +15,7 @@ update_y_mechanism = {
     "logic": "",
     "domain": ("Update Y Space",),
     "parameters_used": [],
+    "updates": [("Global State", "Y", False)],
 }
 
 update_y_prime_mechanism = {
@@ -23,6 +25,7 @@ update_y_prime_mechanism = {
     "logic": "",
     "domain": ("Update Y Prime Space",),
     "parameters_used": [],
+    "updates": [("Global State", "Y Prime", False)],
 }
 
 increment_iteration_step_mechanism = {
@@ -32,6 +35,7 @@ increment_iteration_step_mechanism = {
     "logic": "state['iteration_step'] += 1",
     "domain": (),
     "parameters_used": [],
+    "updates": [("Global State", "Iteration Step", False)],
 }
 
 set_simulation_time_mechanism = {
@@ -41,4 +45,5 @@ set_simulation_time_mechanism = {
     "logic": "state['simulation_time'] = now()",
     "domain": (),
     "parameters_used": [],
+    "updates": [("Global State", "t", False)],
 }
