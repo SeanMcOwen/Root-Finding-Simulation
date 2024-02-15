@@ -1,11 +1,10 @@
 from typing import TypedDict
-from ..Types import XType, ObjectiveValueType, ObjectiveDerivativeValueType
 
 
 update_x_space = {
     "name": "Update X Space",
     "schema": {
-        "x": XType,
+        "x": "X Type",
     },
 }
 

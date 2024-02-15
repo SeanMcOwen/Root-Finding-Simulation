@@ -26,3 +26,4 @@ ObjectiveFunctionDerivativeType = {
 }
 XType = {"name": "X Type", "type": float, "notes": ""}
 SecondsType = {"name": "Seconds Type", "type": float, "notes": ""}
+ActionNameType = {"name": "Action Name Type", "type": str, "notes": ""}

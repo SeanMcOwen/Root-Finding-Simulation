@@ -7,6 +7,7 @@ from .Primitives import (
     ObjectiveFunctionDerivativeType,
     XType,
     SecondsType,
+    ActionNameType,
 )
 
 types = [
@@ -18,4 +19,5 @@ types = [
     ObjectiveFunctionDerivativeType,
     XType,
     SecondsType,
+    ActionNameType,
 ]
