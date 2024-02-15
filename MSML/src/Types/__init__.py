@@ -1,4 +1,3 @@
-from .Dummy import DummyCompoundType, DummyType1, DummyType2
 from .Primitives import (
     NumberOfIterationsType,
     ObjectiveValueType,
@@ -9,3 +8,14 @@ from .Primitives import (
     XType,
     SecondsType,
 )
+
+types = [
+    NumberOfIterationsType,
+    ObjectiveValueType,
+    ObjectiveDerivativeValueType,
+    RootFindingMethodType,
+    ObjectiveFunctionType,
+    ObjectiveFunctionDerivativeType,
+    XType,
+    SecondsType,
+]
