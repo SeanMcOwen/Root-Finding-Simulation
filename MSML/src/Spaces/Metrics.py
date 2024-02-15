@@ -1,13 +1,12 @@
-from ..Types import SecondsType, XType, ObjectiveValueType, ObjectiveDerivativeValueType
 from datetime import datetime
 
 
 computation_time_metric_space = {
     "name": "Computation Time Metric Space",
     "schema": {
-        "simulation_time": datetime,
-        "computation_time": SecondsType,
-        "action_name": str,
+        "simulation_time": "Seconds Type",
+        "computation_time": "Seconds Type",
+        "action_name": "Action Name Type",
     },
 }
 
@@ -15,11 +14,11 @@ computation_time_metric_space = {
 state_metric_space = {
     "name": "State Metric Space",
     "schema": {
-        "simulation_time": datetime,
-        "x": XType,
-        "y": ObjectiveValueType,
-        "y_prime": ObjectiveDerivativeValueType,
-        "iteration_step": int,
+        "simulation_time": "Seconds Type",
+        "x": "X Type",
+        "y": "Objective Value Type",
+        "y_prime": "Objective Derivative Value Type",
+        "iteration_step": "Number of Iterations Type",
     },
 }
 

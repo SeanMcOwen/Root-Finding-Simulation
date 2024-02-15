@@ -5,6 +5,7 @@ log_computation_time_metric_mechanism = {
     "logic": "",
     "domain": ("Computation Time Metric Space",),
     "parameters_used": [],
+    "updates": [],
 }
 
 
@@ -15,4 +16,5 @@ log_state_metric_mechanism = {
     "logic": "",
     "domain": ("State Metric Space",),
     "parameters_used": [],
+    "updates": [],
 }

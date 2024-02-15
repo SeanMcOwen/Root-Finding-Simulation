@@ -1,3 +1,3 @@
-from .Dummy import dummy_entity
-entities = {"Dummy": dummy_entity}
+from .Global import global_entity
 
+entities = {"Global": global_entity}

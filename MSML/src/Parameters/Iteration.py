@@ -1,17 +1,9 @@
-from ..Types import (
-    NumberOfIterationsType,
-    ObjectiveValueType,
-    RootFindingMethodType,
-    ObjectiveFunctionType,
-    ObjectiveFunctionDerivativeType,
-)
-
 iteration_parameter_set = {
     "name": "Dummy Parameter Set",
     "notes": "",
     "parameters": [
         {
-            "variable_type": NumberOfIterationsType,
+            "variable_type": "Number of Iterations Type",
             "name": "max_iterations",
             "description": "The maximum number of iterations for the simulation",
             "symbol": None,
@@ -19,7 +11,7 @@ iteration_parameter_set = {
             "parameter_class": "system",
         },
         {
-            "variable_type": ObjectiveValueType,
+            "variable_type": "Objective Value Type",
             "name": "tolerance",
             "description": "The tolerance to determine if iteartions can stop",
             "symbol": None,
@@ -27,7 +19,7 @@ iteration_parameter_set = {
             "parameter_class": "system",
         },
         {
-            "variable_type": ObjectiveFunctionType,
+            "variable_type": "Objective Function Type",
             "name": "f",
             "description": "The objective function",
             "symbol": None,
@@ -35,7 +27,7 @@ iteration_parameter_set = {
             "parameter_class": "behavioral",
         },
         {
-            "variable_type": ObjectiveFunctionDerivativeType,
+            "variable_type": "Objective Function Derivative Type",
             "name": "f_prime",
             "description": "The objective function derivative",
             "symbol": None,
@@ -43,7 +35,7 @@ iteration_parameter_set = {
             "parameter_class": "behavioral",
         },
         {
-            "variable_type": RootFindingMethodType,
+            "variable_type": "Root Finding Method Type",
             "name": "root_finding_method",
             "description": "The functional parameterization for the root finding method to use",
             "symbol": None,
