@@ -51,3 +51,10 @@ calculate_y_prime_policy = {
     "codomain": ("Update Y Prime Space", "Computation Time Metric Space"),
     "parameters_used": ["f_prime"],
 }
+
+iteration_policies = [
+    iteration_controller_policy,
+    iteration_policy,
+    calculate_y_policy,
+    calculate_y_prime_policy,
+]

@@ -165,10 +165,10 @@ Block which encapsulates the full simulation.
 1. [[Terminating Space]]
 
 ## Parameters Used
-1. [[max_iterations]]
-2. [[f]]
-3. [[f_prime]]
-4. [[root_finding_method]]
+1. [[f_prime]]
+2. [[root_finding_method]]
+3. [[f]]
+4. [[max_iterations]]
 
 ## Called By
 

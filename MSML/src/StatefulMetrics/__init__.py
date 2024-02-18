@@ -1,1 +1,1 @@
-stateful_metrics = {}
+stateful_metrics = []
