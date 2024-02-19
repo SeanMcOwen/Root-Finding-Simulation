@@ -157,7 +157,7 @@ end
         <th>Type</th>
         <th>Symbol</th>
         <th>Domain</th>
-      </tr><tr><td>X</td><td></td><td>X Type</td><td></td><td></td></tr><tr><td>Iteration Step</td><td></td><td>Number of Iterations Type</td><td></td><td></td></tr><tr><td>t</td><td></td><td>Seconds Type</td><td></td><td></td></tr><tr><td>Y</td><td></td><td>Objective Value Type</td><td></td><td></td></tr><tr><td>Y Prime</td><td></td><td>Objective Derivative Value Type</td><td></td><td></td></tr></table><h3>Local States</h3><h2>Spaces</h2><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h3>Terminating Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: Seconds Type,<br/>computation_time: Seconds Type,<br/>action_name: Action Name Type}</p><h3>Empty Space</h3><p>{}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
+      </tr><tr><td>X</td><td></td><td>X Type</td><td></td><td></td></tr><tr><td>Iteration Step</td><td></td><td>Number of Iterations Type</td><td></td><td></td></tr><tr><td>t</td><td></td><td>Seconds Type</td><td></td><td></td></tr><tr><td>Y</td><td></td><td>Objective Value Type</td><td></td><td></td></tr><tr><td>Y Prime</td><td></td><td>Objective Derivative Value Type</td><td></td><td></td></tr></table><h3>Local States</h3><h2>Spaces</h2><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Terminating Space</h3><p>{}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Empty Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: Seconds Type,<br/>computation_time: Seconds Type,<br/>action_name: Action Name Type}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
 <h2>Policies</h2><h3>Calculate Y Prime Policy</h3><p>The policy which calculates the value for the derivative of f.</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>
 <p>1. Empty Space</p><h4>Followed By:</h4>
@@ -209,7 +209,7 @@ end
 <p>1. Update Y Prime Space</p><h4>State Updates:</h4>
 <p>1. Global.Y Prime</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
+<p>Update the global state variable of Y Prime to be equal to DOMAIN[0].Y Prime</p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><p>2. Iteration Policy</p><p>3. Calculate Y Policy</p><h4>Domain Spaces:</h4>
 <p>1. Computation Time Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
@@ -219,7 +219,7 @@ end
 <p>1. Update Y Space</p><h4>State Updates:</h4>
 <p>1. Global.Y</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
+<p>Update the global state variable of Y to be equal to DOMAIN[0].Y</p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><p>2. Iteration Policy</p><p>3. Calculate Y Policy</p><h4>Domain Spaces:</h4>
 <p>1. Computation Time Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
@@ -229,7 +229,7 @@ end
 <p>1. Update X Space</p><h4>State Updates:</h4>
 <p>1. Global.X</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
+<p>Change the global state variable of X to be equal to DOMAIN[0].X</p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>
 <p>1. Empty Space</p><h4>State Updates:</h4>
 <p>1. Global.Iteration Step</p><h4>Constraints:</h4>
@@ -244,7 +244,7 @@ end
 <p>1. Update Y Prime Space</p><h4>State Updates:</h4>
 <p>1. Global.Y Prime</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
+<p>Update the global state variable of Y Prime to be equal to DOMAIN[0].Y Prime</p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><p>2. Iteration Policy</p><p>3. Calculate Y Policy</p><h4>Domain Spaces:</h4>
 <p>1. Computation Time Metric Space</p><h4>State Updates:</h4>
 <h4>Constraints:</h4>
@@ -254,7 +254,7 @@ end
 <p>1. Update Y Space</p><h4>State Updates:</h4>
 <p>1. Global.Y</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Set Simulation Time Mechanism</h3><p>Mechanism for setting the current time of the simulation</p><h4>Preceded By:</h4>
+<p>Update the global state variable of Y to be equal to DOMAIN[0].Y</p><h3>Set Simulation Time Mechanism</h3><p>Mechanism for setting the current time of the simulation</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>
 <p>1. Empty Space</p><h4>State Updates:</h4>
 <p>1. Global.t</p><h4>Constraints:</h4>
@@ -264,4 +264,4 @@ end
 <p>1. Update X Space</p><h4>State Updates:</h4>
 <p>1. Global.X</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h2>Parameters</h2><h3>f_prime</h3><p>Description: The objective function derivative</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: behavioral</p><h3>root_finding_method</h3><p>Description: The functional parameterization for the root finding method to use</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: functional</p><h3>f</h3><p>Description: The objective function</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: behavioral</p><h3>max_iterations</h3><p>Description: The maximum number of iterations for the simulation</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: system</p>
+<p>Change the global state variable of X to be equal to DOMAIN[0].X</p><h2>Parameters</h2><h3>f_prime</h3><p>Description: The objective function derivative</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: behavioral</p><h3>f</h3><p>Description: The objective function</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: behavioral</p><h3>max_iterations</h3><p>Description: The maximum number of iterations for the simulation</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: system</p><h3>root_finding_method</h3><p>Description: The functional parameterization for the root finding method to use</p><p>Symbol: None</p><p>Domain: None</p><p>Parameter Class: functional</p>

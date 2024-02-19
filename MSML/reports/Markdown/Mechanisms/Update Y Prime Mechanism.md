@@ -7,7 +7,7 @@ Mechanism for an update to the y_prime value
 1. [[Update Y Prime Space]]
 ## Constraints
 ## Logic
-
+Update the global state variable of Y Prime to be equal to DOMAIN[0].Y Prime
 
 ## Updates
 

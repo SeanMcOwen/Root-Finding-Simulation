@@ -19,7 +19,7 @@
 │   ├──Computation Time Metric Space
 │   ├──State Metric Space
 ├──**Parameters**
-│   ├──Dummy Parameter Set
+│   ├──Iteration Parameter Set
 │   │   ├──max_iterations
 │   │   ├──tolerance
 │   │   ├──f

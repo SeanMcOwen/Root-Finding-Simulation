@@ -3,7 +3,9 @@ log_computation_time_metric_mechanism = {
     "description": "The computation time metric is logged here",
     "constraints": [],
     "logic": "",
-    "domain": ("Computation Time Metric Space",),
+    "domain": [
+        "Computation Time Metric Space",
+    ],
     "parameters_used": [],
     "updates": [],
 }
@@ -14,7 +16,9 @@ log_state_metric_mechanism = {
     "description": "The state metric is logged here",
     "constraints": [],
     "logic": "",
-    "domain": ("State Metric Space",),
+    "domain": [
+        "State Metric Space",
+    ],
     "parameters_used": [],
     "updates": [],
 }
