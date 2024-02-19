@@ -154,12 +154,7 @@
 <p>1. Update X Space</p><h4>State Updates:</h4>
 <p>1. Global.X</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
-<p>1. Calculate Y Prime Policy</p><p>2. Iteration Policy</p><p>3. Calculate Y Policy</p><h4>Domain Spaces:</h4>
-<p>1. Computation Time Metric Space</p><h4>State Updates:</h4>
-<h4>Constraints:</h4>
-<h4>Logic:</h4>
-<p></p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
+<p>Change the global state variable of X to be equal to DOMAIN[0].X</p><h3>Increment Iteration Step Mechanism</h3><p>Mechanism for incrementing the iteration step by 1</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>
 <p>1. Empty Space</p><h4>State Updates:</h4>
 <p>1. Global.Iteration Step</p><h4>Constraints:</h4>
@@ -174,10 +169,15 @@
 <p>1. Update Y Space</p><h4>State Updates:</h4>
 <p>1. Global.Y</p><h4>Constraints:</h4>
 <h4>Logic:</h4>
-<p></p><h3>Update Y Prime Mechanism</h3><p>Mechanism for an update to the y_prime value</p><h4>Preceded By:</h4>
+<p>Update the global state variable of Y to be equal to DOMAIN[0].Y</p><h3>Update Y Prime Mechanism</h3><p>Mechanism for an update to the y_prime value</p><h4>Preceded By:</h4>
 <p>1. Calculate Y Prime Policy</p><h4>Domain Spaces:</h4>
 <p>1. Update Y Prime Space</p><h4>State Updates:</h4>
 <p>1. Global.Y Prime</p><h4>Constraints:</h4>
+<h4>Logic:</h4>
+<p>Update the global state variable of Y Prime to be equal to DOMAIN[0].Y Prime</p><h3>Log Computation Time Metric Mechanism</h3><p>The computation time metric is logged here</p><h4>Preceded By:</h4>
+<p>1. Calculate Y Prime Policy</p><p>2. Iteration Policy</p><p>3. Calculate Y Policy</p><h4>Domain Spaces:</h4>
+<p>1. Computation Time Metric Space</p><h4>State Updates:</h4>
+<h4>Constraints:</h4>
 <h4>Logic:</h4>
 <p></p><h3>Log State Metric Mechanism</h3><p>The state metric is logged here</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>

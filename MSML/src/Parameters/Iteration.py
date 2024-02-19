@@ -1,5 +1,5 @@
 iteration_parameter_set = {
-    "name": "Dummy Parameter Set",
+    "name": "Iteration Parameter Set",
     "notes": "",
     "parameters": [
         {

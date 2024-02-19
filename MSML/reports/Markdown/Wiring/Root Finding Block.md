@@ -102,9 +102,9 @@ Block which handles all aspects of using the root finding algorithm.
 1. [[Terminating Space]]
 
 ## Parameters Used
-1. [[max_iterations]]
+1. [[f_prime]]
 2. [[f]]
-3. [[f_prime]]
+3. [[max_iterations]]
 4. [[root_finding_method]]
 
 ## Called By

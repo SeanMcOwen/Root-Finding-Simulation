@@ -19,7 +19,7 @@
 │   ├──[[Computation Time Metric Space]]
 │   ├──[[State Metric Space]]
 ├──**Parameters**
-│   ├──[[Iteration]]
+│   ├──[[Iteration Parameter Set]]
 │   │   ├──max_iterations
 │   │   ├──tolerance
 │   │   ├──f
@@ -35,9 +35,9 @@
 │   ├──[[Calculate Y Prime Policy]]
 ├──**Mechanisms**
 │   ├──[[Update X Mechanism]]
-│   ├──[[Log Computation Time Metric Mechanism]]
 │   ├──[[Increment Iteration Step Mechanism]]
 │   ├──[[Set Simulation Time Mechanism]]
 │   ├──[[Update Y Mechanism]]
 │   ├──[[Update Y Prime Mechanism]]
+│   ├──[[Log Computation Time Metric Mechanism]]
 │   ├──[[Log State Metric Mechanism]]

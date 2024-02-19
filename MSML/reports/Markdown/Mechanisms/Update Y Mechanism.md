@@ -7,7 +7,7 @@ Mechanism for an update to the y value
 1. [[Update Y Space]]
 ## Constraints
 ## Logic
-
+Update the global state variable of Y to be equal to DOMAIN[0].Y
 
 ## Updates
 

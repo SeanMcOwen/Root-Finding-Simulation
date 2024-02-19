@@ -1,1 +1,1 @@
-boundary_actions = {}
+boundary_actions = []
