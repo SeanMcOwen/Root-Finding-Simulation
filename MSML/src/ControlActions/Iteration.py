@@ -2,6 +2,7 @@ initialization_control_action_option1 = {
     "name": "Set X = 0",
     "description": "Simply sets the starting value of X to be equal to 0.",
     "logic": "STATE[0].X = 0",
+    # "code": {"python": "set_x_0_control_action"},
 }
 
 initialization_control_action = {
