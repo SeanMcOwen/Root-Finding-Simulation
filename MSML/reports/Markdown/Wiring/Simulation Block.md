@@ -166,8 +166,8 @@ Block which encapsulates the full simulation.
 
 ## Parameters Used
 1. [[f]]
-2. [[max_iterations]]
-3. [[f_prime]]
+2. [[f_prime]]
+3. [[max_iterations]]
 4. [[root_finding_method]]
 
 ## Called By

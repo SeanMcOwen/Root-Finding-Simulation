@@ -1,5 +1,6 @@
 ## Type
-<built-in function callable>
+### Python Type
+callable
 
 ## Notes
 
