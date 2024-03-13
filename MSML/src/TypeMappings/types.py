@@ -1,10 +1,15 @@
-from typing import Union
+from typing import Union, Literal
 
 mapping = {
     "NumberIterationsType": int,
     "ObjectiveValueType": float,
     "ObjectiveDerivativeValueType": float,
-    "RootFindingMethodType": Union["Bisection", "Newton", "Secant", "Steffensen"],
+    "RootFindingMethodType": Union[
+        Literal["Bisection"],
+        Literal["Newton"],
+        Literal["Secant"],
+        Literal["Steffensen"],
+    ],
     "ObjectiveFunctionType": callable,
     "ObjectiveFunctionDerivativeType": callable,
     "XType": float,

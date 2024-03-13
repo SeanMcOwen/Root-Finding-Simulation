@@ -1,5 +1,6 @@
 ## Type
-<class 'float'>
+### Python Type
+float
 
 ## Notes
 

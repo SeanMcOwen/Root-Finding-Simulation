@@ -73,8 +73,8 @@ Block which updates the Y, Y Prime, and the iteration step.
 1. [[Empty Space]]
 
 ## Parameters Used
-1. [[f_prime]]
-2. [[f]]
+1. [[f]]
+2. [[f_prime]]
 
 ## Called By
 
