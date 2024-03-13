@@ -128,7 +128,8 @@
         <th>Symbol</th>
         <th>Domain</th>
       </tr><tr><td>X</td><td></td><td>X Type</td><td></td><td></td></tr><tr><td>Iteration Step</td><td></td><td>Number of Iterations Type</td><td></td><td></td></tr><tr><td>t</td><td></td><td>Seconds Type</td><td></td><td></td></tr><tr><td>Y</td><td></td><td>Objective Value Type</td><td></td><td></td></tr><tr><td>Y Prime</td><td></td><td>Objective Derivative Value Type</td><td></td><td></td></tr></table><h2>Spaces</h2><h3>Terminating Space</h3><p>{}</p><h3>Empty Space</h3><p>{}</p><h3>Initialization Space</h3><p>{}</p><h3>Update X Space</h3><p>{x: X Type}</p><h3>Update Y Space</h3><p>{y: Objective Value Type}</p><h3>Update Y Prime Space</h3><p>{y_prime: Objective Derivative Value Type}</p><h3>None Space</h3><p>{}</p><h3>Computation Time Metric Space</h3><p>{simulation_time: Seconds Type,<br/>computation_time: Seconds Type,<br/>action_name: Action Name Type}</p><h3>State Metric Space</h3><p>{simulation_time: Seconds Type,<br/>x: X Type,<br/>y: Objective Value Type,<br/>y_prime: Objective Derivative Value Type,<br/>iteration_step: Number of Iterations Type}</p><h2>Behavioral Action Space</h2><h2>Control Action Space</h2><h3>Initialization Control Action</h3><p>Control action to begin the simulation</p><h4>Constraints:</h4>
-<h2>Policies</h2><h3>Iteration Controller Policy</h3><p>The policy which controls whether another iteration should take place in a simulation.</p><h4>Preceded By:</h4>
+<h4>Control Action Options:</h4>
+<details><summary><b>1. Set X = 0</b></summary><p>Simply sets the starting value of X to be equal to 0.</p><p>Logic: STATE[0].X = 0</p></details><br/><h2>Policies</h2><h3>Iteration Controller Policy</h3><p>The policy which controls whether another iteration should take place in a simulation.</p><h4>Preceded By:</h4>
 <h4>Domain Spaces:</h4>
 <p>1. Empty Space</p><h4>Followed By:</h4>
 <p>1. Iteration Policy</p><h4>Codomain Spaces:</h4>
