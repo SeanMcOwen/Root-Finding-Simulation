@@ -8,6 +8,16 @@
 │   │   ├──Y
 │   │   ├──Y Prime
 ├──**Stateful Metrics**
+├──**Types**
+│   ├──[[Number of Iterations Type]]
+│   ├──[[Objective Value Type]]
+│   ├──[[Objective Derivative Value Type]]
+│   ├──[[Root Finding Method Type]]
+│   ├──[[Objective Function Type]]
+│   ├──[[Objective Function Derivative Type]]
+│   ├──[[X Type]]
+│   ├──[[Seconds Type]]
+│   ├──[[Action Name Type]]
 ├──**Spaces**
 │   ├──[[Terminating Space]]
 │   ├──[[Empty Space]]
@@ -19,12 +29,12 @@
 │   ├──[[Computation Time Metric Space]]
 │   ├──[[State Metric Space]]
 ├──**Parameters**
-│   ├──[[Iteration Parameter Set]]
-│   │   ├──max_iterations
-│   │   ├──tolerance
-│   │   ├──f
-│   │   ├──f_prime
-│   │   ├──root_finding_method
+│   ├──Iteration Parameter Set
+│   │   ├──[[max_iterations]]
+│   │   ├──[[tolerance]]
+│   │   ├──[[f]]
+│   │   ├──[[f_prime]]
+│   │   ├──[[root_finding_method]]
 ├──**Boundary Actions**
 ├──**Control Actions**
 │   ├──[[Initialization Control Action]]

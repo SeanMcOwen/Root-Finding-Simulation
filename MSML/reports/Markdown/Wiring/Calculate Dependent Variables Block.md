@@ -2,81 +2,109 @@
 
 ```mermaid
 graph TB
-subgraph X18[Calculate Dependent Variables Block]
+
+subgraph SVS["State Variables"]
+EE0[("Global")]
+EES0(["Y"])
+EES0 --- EE0
+EES1(["Y Prime"])
+EES1 --- EE0
+EES2(["Iteration Step"])
+EES2 --- EE0
+end
+
+subgraph X18["Calculate Dependent Variables Block"]
 direction TB
-subgraph X7[Calculate Y Block]
+subgraph X7["Calculate Y Block"]
 direction TB
-X1[Calculate Y Policy]
-subgraph X6[ ]
+X1["Calculate Y Policy"]
+subgraph X6[" "]
 direction TB
-X2[Update Y Mechanism]
-X3[Log Computation Time Metric Mechanism]
+X2["Update Y Mechanism"]
+X2 --> EES0
+X3["Log Computation Time Metric Mechanism"]
 X4[Domain]
-X5[Codomain]
+
 direction LR
 direction TB
 X4 --"Update Y Space"--> X2
 X4 --"Computation Time Metric Space"--> X3
-X2 --> X5
-X3 --> X5
 end
 X1--"Update Y Space
-Computation Time Metric Space"-->X6
+Computation Time Metric Space"---->X6
 end
-subgraph X14[Calculate Y Prime Block]
+subgraph X14["Calculate Y Prime Block"]
 direction TB
-X8[Calculate Y Prime Policy]
-subgraph X13[ ]
+X8["Calculate Y Prime Policy"]
+subgraph X13[" "]
 direction TB
-X9[Update Y Prime Mechanism]
-X10[Log Computation Time Metric Mechanism]
+X9["Update Y Prime Mechanism"]
+X9 --> EES0-Prime
+X10["Log Computation Time Metric Mechanism"]
 X11[Domain]
-X12[Codomain]
+
 direction LR
 direction TB
 X11 --"Update Y Prime Space"--> X9
 X11 --"Computation Time Metric Space"--> X10
-X9 --> X12
-X10 --> X12
 end
 X8--"Update Y Prime Space
-Computation Time Metric Space"-->X13
+Computation Time Metric Space"---->X13
 end
-X15[Increment Iteration Step Mechanism]
+X15["Increment Iteration Step Mechanism"]
+X15 --> EES2
 X16[Domain]
-X17[Codomain]
+
 direction LR
 direction TB
 X16 --> X7
 X16 --> X14
 X16 --> X15
-X7 --> X17
-X14 --> X17
-X15 --> X17
 end
 ```
 
 ## Description
 
-Block Type: Paralell Block
+Block Type: Parallel Block
 Block which updates the Y, Y Prime, and the iteration step.
 ## Components
 1. [[Calculate Y Block]]
 2. [[Calculate Y Prime Block]]
 3. [[Increment Iteration Step Mechanism]]
 
+## All Blocks
+1. [[Update Y Prime Mechanism]]
+2. [[Calculate Y Policy]]
+3. [[Log Computation Time Metric Mechanism]]
+4. [[Increment Iteration Step Mechanism]]
+5. [[Update Y Mechanism]]
+6. [[Calculate Y Prime Policy]]
+
 ## Constraints
+
 ## Domain Spaces
 1. [[Empty Space]]
 
 ## Codomain Spaces
 1. [[Empty Space]]
 
+## All Spaces Used
+1. [[Computation Time Metric Space]]
+2. [[Update Y Prime Space]]
+3. [[Terminating Space]]
+4. [[Update Y Space]]
+5. [[Empty Space]]
+
 ## Parameters Used
-1. [[f]]
-2. [[f_prime]]
+1. [[f_prime]]
+2. [[f]]
 
 ## Called By
 
 ## Calls
+
+## All State Updates
+1. [[Global]].Y
+2. [[Global]].Y Prime
+3. [[Global]].Iteration Step
 

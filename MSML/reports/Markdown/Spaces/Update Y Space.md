@@ -1,3 +1,3 @@
 ## Schema
 
-{y: Objective Value Type}
+{y: [[Objective Value Type]]}

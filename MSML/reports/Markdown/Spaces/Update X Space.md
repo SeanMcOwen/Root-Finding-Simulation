@@ -1,3 +1,3 @@
 ## Schema
 
-{x: X Type}
+{x: [[X Type]]}

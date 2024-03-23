@@ -9,6 +9,9 @@ The policy which controls whether another iteration should take place in a simul
 ## Codomain Spaces
 1. [[Empty Space]]
 ## Constraints
+## Parameters Used
+1. [[max_iterations]]
+## Metrics Used
 ## Policy Options
 ### 1. Constant Iterations Policy Option
 #### Description

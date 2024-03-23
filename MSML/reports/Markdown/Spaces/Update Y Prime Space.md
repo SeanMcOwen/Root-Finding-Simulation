@@ -1,3 +1,3 @@
 ## Schema
 
-{y_prime: Objective Derivative Value Type}
+{y_prime: [[Objective Derivative Value Type]]}

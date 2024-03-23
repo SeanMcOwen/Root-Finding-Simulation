@@ -18,6 +18,7 @@ iteration_controller_policy = {
     "domain": [],
     "codomain": [],
     "parameters_used": ["max_iterations"],
+    "metrics_used": [],
 }
 
 
@@ -29,6 +30,7 @@ iteration_policy = {
     "domain": [],
     "codomain": ["Update X Space", "Computation Time Metric Space"],
     "parameters_used": ["root_finding_method"],
+    "metrics_used": [],
 }
 
 
@@ -42,6 +44,7 @@ calculate_y_policy = {
     ],
     "codomain": ["Update Y Space", "Computation Time Metric Space"],
     "parameters_used": ["f"],
+    "metrics_used": [],
 }
 
 calculate_y_prime_policy = {
@@ -52,6 +55,7 @@ calculate_y_prime_policy = {
     "domain": [],
     "codomain": ["Update Y Prime Space", "Computation Time Metric Space"],
     "parameters_used": ["f_prime"],
+    "metrics_used": [],
 }
 
 iteration_policies = [

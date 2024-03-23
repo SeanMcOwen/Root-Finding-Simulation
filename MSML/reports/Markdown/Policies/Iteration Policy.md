@@ -12,3 +12,6 @@ The policy which produces one iteration of the root finding algorithm.
 1. [[Update X Space]]
 2. [[Computation Time Metric Space]]
 ## Constraints
+## Parameters Used
+1. [[root_finding_method]]
+## Metrics Used
