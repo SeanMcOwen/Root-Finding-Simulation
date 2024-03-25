@@ -46,8 +46,8 @@ Block which updates X and logs the computation time taken.
 
 ## All Spaces Used
 1. [[Update X Space]]
-2. [[Empty Space]]
-3. [[Computation Time Metric Space]]
+2. [[Computation Time Metric Space]]
+3. [[Empty Space]]
 4. [[Terminating Space]]
 
 ## Parameters Used
