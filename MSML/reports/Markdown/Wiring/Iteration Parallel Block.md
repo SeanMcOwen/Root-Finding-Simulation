@@ -45,10 +45,10 @@ Block which updates X and logs the computation time taken.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Update X Space]]
-2. [[Computation Time Metric Space]]
+1. [[Computation Time Metric Space]]
+2. [[Terminating Space]]
 3. [[Empty Space]]
-4. [[Terminating Space]]
+4. [[Update X Space]]
 
 ## Parameters Used
 

@@ -51,10 +51,10 @@ Block which calculates and updates the Y prime value.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Computation Time Metric Space]]
-2. [[Empty Space]]
-3. [[Update Y Prime Space]]
-4. [[Terminating Space]]
+1. [[Update Y Prime Space]]
+2. [[Terminating Space]]
+3. [[Empty Space]]
+4. [[Computation Time Metric Space]]
 
 ## Parameters Used
 1. [[f_prime]]

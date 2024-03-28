@@ -34,11 +34,18 @@ iteration_policy = {
 }
 
 
+calculate_y_policy_basic = {
+    "name": "Calculate Y Policy Basic",
+    "description": "Basic solving.",
+    "logic": """y = params["f"](state["x"])""",
+}
+
+
 calculate_y_policy = {
     "name": "Calculate Y Policy",
     "description": "The policy which calculates the value for f.",
     "constraints": [],
-    "policy_options": [],
+    "policy_options": [calculate_y_policy_basic],
     "domain": [
         "Empty Space",
     ],

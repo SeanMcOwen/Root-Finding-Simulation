@@ -1,3 +1,8 @@
+---
+cssclasses:
+  - spec
+---
+
 ├──**Entities**
 │   ├──[[Global]]
 ├──**State**
