@@ -47,8 +47,8 @@ Block which updates the Y value and logs the computation time it took from calcu
 ## All Spaces Used
 1. [[Empty Space]]
 2. [[Terminating Space]]
-3. [[Update Y Space]]
-4. [[Computation Time Metric Space]]
+3. [[Computation Time Metric Space]]
+4. [[Update Y Space]]
 
 ## Parameters Used
 

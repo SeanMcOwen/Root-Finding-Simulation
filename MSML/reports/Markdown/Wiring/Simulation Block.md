@@ -7,11 +7,11 @@ subgraph SVS["State Variables"]
 EE0[("Global")]
 EES0(["X"])
 EES0 --- EE0
-EES1(["t"])
+EES1(["Iteration Step"])
 EES1 --- EE0
-EES2(["Iteration Step"])
+EES2(["Y"])
 EES2 --- EE0
-EES3(["Y"])
+EES3(["t"])
 EES3 --- EE0
 EES4(["Y Prime"])
 EES4 --- EE0
@@ -25,7 +25,7 @@ X1["Initialization Control Action"]
 X2["Update X Mechanism"]
 X2 --> EES0
 X3["Set Simulation Time Mechanism"]
-X3 --> EES1
+X3 --> EES3
 X1--"Update X Space"--->X2
 X2--->X3
 end
@@ -37,7 +37,7 @@ X5["Calculate Y Policy"]
 subgraph X10[" "]
 direction TB
 X6["Update Y Mechanism"]
-X6 --> EES3
+X6 --> EES2
 X7["Log Computation Time Metric Mechanism"]
 X8[Domain]
 
@@ -55,7 +55,7 @@ X12["Calculate Y Prime Policy"]
 subgraph X17[" "]
 direction TB
 X13["Update Y Prime Mechanism"]
-X13 --> EES3-Prime
+X13 --> EES2-Prime
 X14["Log Computation Time Metric Mechanism"]
 X15[Domain]
 
@@ -68,7 +68,7 @@ X12--"Update Y Prime Space
 Computation Time Metric Space"---->X17
 end
 X19["Increment Iteration Step Mechanism"]
-X19 --> EES2
+X19 --> EES1
 X20[Domain]
 
 direction LR
@@ -106,7 +106,7 @@ X31["Calculate Y Policy"]
 subgraph X36[" "]
 direction TB
 X32["Update Y Mechanism"]
-X32 --> EES3
+X32 --> EES2
 X33["Log Computation Time Metric Mechanism"]
 X34[Domain]
 
@@ -124,7 +124,7 @@ X38["Calculate Y Prime Policy"]
 subgraph X43[" "]
 direction TB
 X39["Update Y Prime Mechanism"]
-X39 --> EES3-Prime
+X39 --> EES2-Prime
 X40["Log Computation Time Metric Mechanism"]
 X41[Domain]
 
@@ -137,7 +137,7 @@ X38--"Update Y Prime Space
 Computation Time Metric Space"---->X43
 end
 X45["Increment Iteration Step Mechanism"]
-X45 --> EES2
+X45 --> EES1
 X46[Domain]
 
 direction LR
@@ -147,7 +147,7 @@ X46 --> X44
 X46 --> X45
 end
 X49["Set Simulation Time Mechanism"]
-X49 --> EES1
+X49 --> EES3
 X23-.->X30
 X30--->X48
 X48--->X49
@@ -168,17 +168,17 @@ Block which encapsulates the full simulation.
 3. [[Root Finding Block]]
 
 ## All Blocks
-1. [[Update X Mechanism]]
-2. [[Calculate Y Prime Policy]]
-3. [[Iteration Policy]]
-4. [[Log Computation Time Metric Mechanism]]
-5. [[Update Y Mechanism]]
-6. [[Increment Iteration Step Mechanism]]
-7. [[Iteration Controller Policy]]
-8. [[Calculate Y Policy]]
-9. [[Initialization Control Action]]
-10. [[Update Y Prime Mechanism]]
-11. [[Set Simulation Time Mechanism]]
+1. [[Set Simulation Time Mechanism]]
+2. [[Update X Mechanism]]
+3. [[Iteration Controller Policy]]
+4. [[Calculate Y Policy]]
+5. [[Iteration Policy]]
+6. [[Calculate Y Prime Policy]]
+7. [[Log Computation Time Metric Mechanism]]
+8. [[Update Y Mechanism]]
+9. [[Increment Iteration Step Mechanism]]
+10. [[Initialization Control Action]]
+11. [[Update Y Prime Mechanism]]
 
 ## Constraints
 
@@ -188,18 +188,18 @@ Block which encapsulates the full simulation.
 1. [[Terminating Space]]
 
 ## All Spaces Used
-1. [[Update Y Prime Space]]
-2. [[Computation Time Metric Space]]
-3. [[Terminating Space]]
-4. [[Empty Space]]
+1. [[Terminating Space]]
+2. [[Update Y Prime Space]]
+3. [[Empty Space]]
+4. [[Computation Time Metric Space]]
 5. [[Update X Space]]
 6. [[Update Y Space]]
 
 ## Parameters Used
-1. [[f]]
-2. [[f_prime]]
-3. [[max_iterations]]
-4. [[root_finding_method]]
+1. [[max_iterations]]
+2. [[root_finding_method]]
+3. [[f_prime]]
+4. [[f]]
 
 ## Called By
 
@@ -207,8 +207,8 @@ Block which encapsulates the full simulation.
 
 ## All State Updates
 1. [[Global]].X
-2. [[Global]].t
-3. [[Global]].Iteration Step
-4. [[Global]].Y
+2. [[Global]].Iteration Step
+3. [[Global]].Y
+4. [[Global]].t
 5. [[Global]].Y Prime
 

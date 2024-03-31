@@ -14,3 +14,10 @@ The policy which calculates the value for f.
 ## Parameters Used
 1. [[f]]
 ## Metrics Used
+## Policy Options
+### 1. Calculate Y Policy Basic
+#### Description
+Basic solving.
+#### Logic
+y = params["f"](state["x"])
+

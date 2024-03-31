@@ -8,7 +8,7 @@ iteration_parameter_set = {
             "description": "The maximum number of iterations for the simulation",
             "symbol": None,
             "domain": None,
-            "parameter_class": "system",
+            "parameter_class": "System",
         },
         {
             "variable_type": "Objective Value Type",
@@ -16,7 +16,7 @@ iteration_parameter_set = {
             "description": "The tolerance to determine if iteartions can stop",
             "symbol": None,
             "domain": None,
-            "parameter_class": "system",
+            "parameter_class": "System",
         },
         {
             "variable_type": "Objective Function Type",
@@ -24,7 +24,7 @@ iteration_parameter_set = {
             "description": "The objective function",
             "symbol": None,
             "domain": None,
-            "parameter_class": "behavioral",
+            "parameter_class": "Behavioral",
         },
         {
             "variable_type": "Objective Function Derivative Type",
@@ -32,7 +32,7 @@ iteration_parameter_set = {
             "description": "The objective function derivative",
             "symbol": None,
             "domain": None,
-            "parameter_class": "behavioral",
+            "parameter_class": "Behavioral",
         },
         {
             "variable_type": "Root Finding Method Type",
@@ -40,7 +40,7 @@ iteration_parameter_set = {
             "description": "The functional parameterization for the root finding method to use",
             "symbol": None,
             "domain": None,
-            "parameter_class": "functional",
+            "parameter_class": "Functional",
         },
     ],
 }

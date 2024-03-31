@@ -33,9 +33,9 @@ Block which handles the initialization.
 3. [[Set Simulation Time Mechanism]]
 
 ## All Blocks
-1. [[Update X Mechanism]]
-2. [[Initialization Control Action]]
-3. [[Set Simulation Time Mechanism]]
+1. [[Set Simulation Time Mechanism]]
+2. [[Update X Mechanism]]
+3. [[Initialization Control Action]]
 
 ## Constraints
 
@@ -45,9 +45,9 @@ Block which handles the initialization.
 1. [[Terminating Space]]
 
 ## All Spaces Used
-1. [[Empty Space]]
-2. [[Terminating Space]]
-3. [[Update X Space]]
+1. [[Update X Space]]
+2. [[Empty Space]]
+3. [[Terminating Space]]
 
 ## Parameters Used
 

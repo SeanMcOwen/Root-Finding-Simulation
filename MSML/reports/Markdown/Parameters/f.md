@@ -4,5 +4,5 @@ Symbol: None
 
 Domain: None
 
-Parameter Class: behavioral
+Parameter Class: Behavioral
 

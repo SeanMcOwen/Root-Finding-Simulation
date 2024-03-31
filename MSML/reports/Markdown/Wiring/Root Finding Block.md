@@ -7,11 +7,11 @@ subgraph SVS["State Variables"]
 EE0[("Global")]
 EES0(["X"])
 EES0 --- EE0
-EES1(["t"])
+EES1(["Iteration Step"])
 EES1 --- EE0
-EES2(["Iteration Step"])
+EES2(["Y"])
 EES2 --- EE0
-EES3(["Y"])
+EES3(["t"])
 EES3 --- EE0
 EES4(["Y Prime"])
 EES4 --- EE0
@@ -46,7 +46,7 @@ X9["Calculate Y Policy"]
 subgraph X14[" "]
 direction TB
 X10["Update Y Mechanism"]
-X10 --> EES3
+X10 --> EES2
 X11["Log Computation Time Metric Mechanism"]
 X12[Domain]
 
@@ -64,7 +64,7 @@ X16["Calculate Y Prime Policy"]
 subgraph X21[" "]
 direction TB
 X17["Update Y Prime Mechanism"]
-X17 --> EES3-Prime
+X17 --> EES2-Prime
 X18["Log Computation Time Metric Mechanism"]
 X19[Domain]
 
@@ -77,7 +77,7 @@ X16--"Update Y Prime Space
 Computation Time Metric Space"---->X21
 end
 X23["Increment Iteration Step Mechanism"]
-X23 --> EES2
+X23 --> EES1
 X24[Domain]
 
 direction LR
@@ -87,7 +87,7 @@ X24 --> X22
 X24 --> X23
 end
 X27["Set Simulation Time Mechanism"]
-X27 --> EES1
+X27 --> EES3
 X1-.->X8
 X8--->X26
 X26--->X27
@@ -106,16 +106,16 @@ Block which handles all aspects of using the root finding algorithm.
 4. [[Set Simulation Time Mechanism]]
 
 ## All Blocks
-1. [[Update X Mechanism]]
-2. [[Calculate Y Prime Policy]]
-3. [[Iteration Policy]]
-4. [[Log Computation Time Metric Mechanism]]
-5. [[Update Y Mechanism]]
-6. [[Increment Iteration Step Mechanism]]
-7. [[Iteration Controller Policy]]
-8. [[Calculate Y Policy]]
-9. [[Update Y Prime Mechanism]]
-10. [[Set Simulation Time Mechanism]]
+1. [[Set Simulation Time Mechanism]]
+2. [[Update X Mechanism]]
+3. [[Iteration Controller Policy]]
+4. [[Calculate Y Policy]]
+5. [[Iteration Policy]]
+6. [[Calculate Y Prime Policy]]
+7. [[Log Computation Time Metric Mechanism]]
+8. [[Update Y Mechanism]]
+9. [[Increment Iteration Step Mechanism]]
+10. [[Update Y Prime Mechanism]]
 
 ## Constraints
 
@@ -126,18 +126,18 @@ Block which handles all aspects of using the root finding algorithm.
 1. [[Terminating Space]]
 
 ## All Spaces Used
-1. [[Update Y Prime Space]]
-2. [[Computation Time Metric Space]]
-3. [[Terminating Space]]
-4. [[Empty Space]]
+1. [[Terminating Space]]
+2. [[Update Y Prime Space]]
+3. [[Empty Space]]
+4. [[Computation Time Metric Space]]
 5. [[Update X Space]]
 6. [[Update Y Space]]
 
 ## Parameters Used
-1. [[f]]
+1. [[max_iterations]]
 2. [[f_prime]]
-3. [[max_iterations]]
-4. [[root_finding_method]]
+3. [[root_finding_method]]
+4. [[f]]
 
 ## Called By
 
@@ -145,8 +145,8 @@ Block which handles all aspects of using the root finding algorithm.
 
 ## All State Updates
 1. [[Global]].X
-2. [[Global]].t
-3. [[Global]].Iteration Step
-4. [[Global]].Y
+2. [[Global]].Iteration Step
+3. [[Global]].Y
+4. [[Global]].t
 5. [[Global]].Y Prime
 
