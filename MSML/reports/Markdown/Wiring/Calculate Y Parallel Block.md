@@ -45,10 +45,10 @@ Block which updates the Y value and logs the computation time it took from calcu
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Update Y Space]]
+1. [[Terminating Space]]
 2. [[Computation Time Metric Space]]
-3. [[Empty Space]]
-4. [[Terminating Space]]
+3. [[Update Y Space]]
+4. [[Empty Space]]
 
 ## Parameters Used
 

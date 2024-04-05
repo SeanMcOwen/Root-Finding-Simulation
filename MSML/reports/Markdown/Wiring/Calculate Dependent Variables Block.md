@@ -5,11 +5,11 @@ graph TB
 
 subgraph SVS["State Variables"]
 EE0[("Global")]
-EES0(["Y"])
+EES0(["Iteration Step"])
 EES0 --- EE0
-EES1(["Iteration Step"])
+EES1(["Y Prime"])
 EES1 --- EE0
-EES2(["Y Prime"])
+EES2(["Y"])
 EES2 --- EE0
 end
 
@@ -21,7 +21,7 @@ X1["Calculate Y Policy"]
 subgraph X6[" "]
 direction TB
 X2["Update Y Mechanism"]
-X2 --> EES0
+X2 --> EES2
 X3["Log Computation Time Metric Mechanism"]
 X4[Domain]
 
@@ -39,7 +39,7 @@ X8["Calculate Y Prime Policy"]
 subgraph X13[" "]
 direction TB
 X9["Update Y Prime Mechanism"]
-X9 --> EES0-Prime
+X9 --> EES1
 X10["Log Computation Time Metric Mechanism"]
 X11[Domain]
 
@@ -52,7 +52,7 @@ X8--"Update Y Prime Space
 Computation Time Metric Space"---->X13
 end
 X15["Increment Iteration Step Mechanism"]
-X15 --> EES1
+X15 --> EES0
 X16[Domain]
 
 direction LR
@@ -73,12 +73,12 @@ Block which updates the Y, Y Prime, and the iteration step.
 3. [[Increment Iteration Step Mechanism]]
 
 ## All Blocks
-1. [[Update Y Mechanism]]
-2. [[Log Computation Time Metric Mechanism]]
-3. [[Update Y Prime Mechanism]]
-4. [[Calculate Y Policy]]
-5. [[Calculate Y Prime Policy]]
-6. [[Increment Iteration Step Mechanism]]
+1. [[Update Y Prime Mechanism]]
+2. [[Calculate Y Prime Policy]]
+3. [[Calculate Y Policy]]
+4. [[Increment Iteration Step Mechanism]]
+5. [[Update Y Mechanism]]
+6. [[Log Computation Time Metric Mechanism]]
 
 ## Constraints
 
@@ -89,22 +89,22 @@ Block which updates the Y, Y Prime, and the iteration step.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Computation Time Metric Space]]
-2. [[Terminating Space]]
-3. [[Empty Space]]
-4. [[Update Y Space]]
-5. [[Update Y Prime Space]]
+1. [[Update Y Prime Space]]
+2. [[Update Y Space]]
+3. [[Terminating Space]]
+4. [[Computation Time Metric Space]]
+5. [[Empty Space]]
 
 ## Parameters Used
-1. [[f]]
-2. [[f_prime]]
+1. [[f_prime]]
+2. [[f]]
 
 ## Called By
 
 ## Calls
 
 ## All State Updates
-1. [[Global]].Y
-2. [[Global]].Iteration Step
-3. [[Global]].Y Prime
+1. [[Global]].Iteration Step
+2. [[Global]].Y Prime
+3. [[Global]].Y
 
