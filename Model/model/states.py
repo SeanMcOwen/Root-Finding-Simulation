@@ -1,4 +1,4 @@
-from .types import SecondsType, ObjectiveValueType, NumberIterationsType, ObjectiveDerivativeValueType, XType
+from .types import SecondsType, ObjectiveDerivativeValueType, XType, NumberIterationsType, ObjectiveValueType
 from typing import TypedDict
 
 GlobalState = TypedDict('Global State', {'X': XType, 'Iteration Step': NumberIterationsType, 't': SecondsType, 'Y': ObjectiveValueType, 'Y Prime': ObjectiveDerivativeValueType})

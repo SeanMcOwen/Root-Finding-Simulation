@@ -1,2 +1,9 @@
+from time import time
+
+
 def calculate_y_policy(state, params, spaces):
-    return {"y": params["f"](state["X"])}
+    start = time()
+    y = params["f"](state["X"])
+    end = time()
+
+    return ({"y": y}, {})

@@ -53,8 +53,8 @@ Block which calculates and updates the Y prime value.
 ## All Spaces Used
 1. [[Update Y Prime Space]]
 2. [[Empty Space]]
-3. [[Terminating Space]]
-4. [[Computation Time Metric Space]]
+3. [[Computation Time Metric Space]]
+4. [[Terminating Space]]
 
 ## Parameters Used
 1. [[f_prime]]
