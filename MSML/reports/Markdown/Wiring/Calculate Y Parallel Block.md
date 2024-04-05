@@ -32,8 +32,8 @@ Block which updates the Y value and logs the computation time it took from calcu
 2. [[Log Computation Time Metric Mechanism]]
 
 ## All Blocks
-1. [[Log Computation Time Metric Mechanism]]
-2. [[Update Y Mechanism]]
+1. [[Update Y Mechanism]]
+2. [[Log Computation Time Metric Mechanism]]
 
 ## Constraints
 
@@ -45,10 +45,10 @@ Block which updates the Y value and logs the computation time it took from calcu
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Empty Space]]
+1. [[Update Y Space]]
 2. [[Computation Time Metric Space]]
-3. [[Terminating Space]]
-4. [[Update Y Space]]
+3. [[Empty Space]]
+4. [[Terminating Space]]
 
 ## Parameters Used
 

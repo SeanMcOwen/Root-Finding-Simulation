@@ -38,9 +38,9 @@ Block which calculates and updates the Y prime value.
 2. [[Calculate Y Prime Parallel Block]]
 
 ## All Blocks
-1. [[Calculate Y Prime Policy]]
-2. [[Log Computation Time Metric Mechanism]]
-3. [[Update Y Prime Mechanism]]
+1. [[Update Y Prime Mechanism]]
+2. [[Calculate Y Prime Policy]]
+3. [[Log Computation Time Metric Mechanism]]
 
 ## Constraints
 
@@ -52,9 +52,9 @@ Block which calculates and updates the Y prime value.
 
 ## All Spaces Used
 1. [[Empty Space]]
-2. [[Computation Time Metric Space]]
-3. [[Terminating Space]]
-4. [[Update Y Prime Space]]
+2. [[Terminating Space]]
+3. [[Update Y Prime Space]]
+4. [[Computation Time Metric Space]]
 
 ## Parameters Used
 1. [[f_prime]]

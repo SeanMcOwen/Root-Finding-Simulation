@@ -51,10 +51,10 @@ Block which calculates one iteration.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Update X Space]]
-2. [[Empty Space]]
-3. [[Computation Time Metric Space]]
-4. [[Terminating Space]]
+1. [[Empty Space]]
+2. [[Update X Space]]
+3. [[Terminating Space]]
+4. [[Computation Time Metric Space]]
 
 ## Parameters Used
 1. [[root_finding_method]]

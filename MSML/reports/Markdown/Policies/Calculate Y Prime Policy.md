@@ -14,3 +14,10 @@ The policy which calculates the value for the derivative of f.
 ## Parameters Used
 1. [[f_prime]]
 ## Metrics Used
+## Policy Options
+### 1. Calculate Y Prime Policy Basic
+#### Description
+Basic solving.
+#### Logic
+y_prime = params["f_prime"](state["X"])
+
