@@ -51,9 +51,9 @@ Block which calculates and updates the Y value.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Computation Time Metric Space]]
-2. [[Terminating Space]]
-3. [[Empty Space]]
+1. [[Empty Space]]
+2. [[Computation Time Metric Space]]
+3. [[Terminating Space]]
 4. [[Update Y Space]]
 
 ## Parameters Used

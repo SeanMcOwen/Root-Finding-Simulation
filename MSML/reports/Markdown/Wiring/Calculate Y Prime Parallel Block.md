@@ -45,10 +45,10 @@ Block which updates the Y prime value and logs the computation time it took from
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Computation Time Metric Space]]
-2. [[Update Y Prime Space]]
+1. [[Empty Space]]
+2. [[Computation Time Metric Space]]
 3. [[Terminating Space]]
-4. [[Empty Space]]
+4. [[Update Y Prime Space]]
 
 ## Parameters Used
 
