@@ -4,6 +4,7 @@ from .Iteration import (
     update_y_mechanism,
     log_computation_time_mechanism,
     update_y_prime_mechanism,
+    increment_iteration_step_mechanism,
 )
 
 mechanisms = {
@@ -12,4 +13,5 @@ mechanisms = {
     "Update Y Mechanism": update_y_mechanism,
     "Log Computation Time Metric Mechanism": log_computation_time_mechanism,
     "Update Y Prime Mechanism": update_y_prime_mechanism,
+    "Increment Iteration Step Mechanism": increment_iteration_step_mechanism,
 }

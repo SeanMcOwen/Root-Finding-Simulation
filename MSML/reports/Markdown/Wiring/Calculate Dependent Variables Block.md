@@ -7,9 +7,9 @@ subgraph SVS["State Variables"]
 EE0[("Global")]
 EES0(["Iteration Step"])
 EES0 --- EE0
-EES1(["Y Prime"])
+EES1(["Y"])
 EES1 --- EE0
-EES2(["Y"])
+EES2(["Y Prime"])
 EES2 --- EE0
 end
 
@@ -21,7 +21,7 @@ X1["Calculate Y Policy"]
 subgraph X6[" "]
 direction TB
 X2["Update Y Mechanism"]
-X2 --> EES2
+X2 --> EES1
 X3["Log Computation Time Metric Mechanism"]
 X4[Domain]
 
@@ -39,7 +39,7 @@ X8["Calculate Y Prime Policy"]
 subgraph X13[" "]
 direction TB
 X9["Update Y Prime Mechanism"]
-X9 --> EES1
+X9 --> EES1-Prime
 X10["Log Computation Time Metric Mechanism"]
 X11[Domain]
 
@@ -73,12 +73,12 @@ Block which updates the Y, Y Prime, and the iteration step.
 3. [[Increment Iteration Step Mechanism]]
 
 ## All Blocks
-1. [[Update Y Prime Mechanism]]
+1. [[Log Computation Time Metric Mechanism]]
 2. [[Calculate Y Prime Policy]]
-3. [[Calculate Y Policy]]
-4. [[Increment Iteration Step Mechanism]]
+3. [[Update Y Prime Mechanism]]
+4. [[Calculate Y Policy]]
 5. [[Update Y Mechanism]]
-6. [[Log Computation Time Metric Mechanism]]
+6. [[Increment Iteration Step Mechanism]]
 
 ## Constraints
 
@@ -89,8 +89,8 @@ Block which updates the Y, Y Prime, and the iteration step.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Update Y Prime Space]]
-2. [[Update Y Space]]
+1. [[Update Y Space]]
+2. [[Update Y Prime Space]]
 3. [[Terminating Space]]
 4. [[Computation Time Metric Space]]
 5. [[Empty Space]]
@@ -105,6 +105,6 @@ Block which updates the Y, Y Prime, and the iteration step.
 
 ## All State Updates
 1. [[Global]].Iteration Step
-2. [[Global]].Y Prime
-3. [[Global]].Y
+2. [[Global]].Y
+3. [[Global]].Y Prime
 

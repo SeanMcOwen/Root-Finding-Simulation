@@ -21,3 +21,7 @@ def update_y_prime_mechanism(state, params, spaces):
 
 def log_computation_time_mechanism(state, params, spaces):
     pass
+
+
+def increment_iteration_step_mechanism(state, params, spaces):
+    state["Iteration Step"] += 1

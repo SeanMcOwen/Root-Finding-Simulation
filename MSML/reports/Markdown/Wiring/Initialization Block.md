@@ -33,8 +33,8 @@ Block which handles the initialization.
 3. [[Set Simulation Time Mechanism]]
 
 ## All Blocks
-1. [[Set Simulation Time Mechanism]]
-2. [[Initialization Control Action]]
+1. [[Initialization Control Action]]
+2. [[Set Simulation Time Mechanism]]
 3. [[Update X Mechanism]]
 
 ## Constraints

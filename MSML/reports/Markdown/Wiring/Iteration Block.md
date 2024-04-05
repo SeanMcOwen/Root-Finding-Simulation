@@ -38,8 +38,8 @@ Block which calculates one iteration.
 2. [[Iteration Parallel Block]]
 
 ## All Blocks
-1. [[Iteration Policy]]
-2. [[Log Computation Time Metric Mechanism]]
+1. [[Log Computation Time Metric Mechanism]]
+2. [[Iteration Policy]]
 3. [[Update X Mechanism]]
 
 ## Constraints
@@ -52,8 +52,8 @@ Block which calculates one iteration.
 
 ## All Spaces Used
 1. [[Terminating Space]]
-2. [[Computation Time Metric Space]]
-3. [[Update X Space]]
+2. [[Update X Space]]
+3. [[Computation Time Metric Space]]
 4. [[Empty Space]]
 
 ## Parameters Used
