@@ -38,9 +38,9 @@ Block which calculates and updates the Y value.
 2. [[Calculate Y Parallel Block]]
 
 ## All Blocks
-1. [[Log Computation Time Metric Mechanism]]
-2. [[Calculate Y Policy]]
-3. [[Update Y Mechanism]]
+1. [[Calculate Y Policy]]
+2. [[Update Y Mechanism]]
+3. [[Log Computation Time Metric Mechanism]]
 
 ## Constraints
 
@@ -51,10 +51,10 @@ Block which calculates and updates the Y value.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Empty Space]]
-2. [[Terminating Space]]
-3. [[Computation Time Metric Space]]
-4. [[Update Y Space]]
+1. [[Terminating Space]]
+2. [[Computation Time Metric Space]]
+3. [[Update Y Space]]
+4. [[Empty Space]]
 
 ## Parameters Used
 1. [[f]]

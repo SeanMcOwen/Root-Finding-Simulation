@@ -1,4 +1,4 @@
-from .types import ObjectiveValueType, NumberIterationsType, ObjectiveFunctionDerivativeType, RootFindingMethodType, ObjectiveFunctionType
+from .types import NumberIterationsType, RootFindingMethodType, ObjectiveFunctionDerivativeType, ObjectiveFunctionType, ObjectiveValueType
 from typing import TypedDict
 
 SystemParameters = TypedDict('SystemParameters', {'max_iterations': NumberIterationsType, 'tolerance': ObjectiveValueType})

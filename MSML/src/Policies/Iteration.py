@@ -54,11 +54,18 @@ calculate_y_policy = {
     "metrics_used": [],
 }
 
+calculate_y_prime_policy_basic = {
+    "name": "Calculate Y Prime Policy Basic",
+    "description": "Basic solving.",
+    "logic": """y_prime = params["f_prime"](state["X"])""",
+}
+
+
 calculate_y_prime_policy = {
     "name": "Calculate Y Prime Policy",
     "description": "The policy which calculates the value for the derivative of f.",
     "constraints": [],
-    "policy_options": [],
+    "policy_options": [calculate_y_prime_policy_basic],
     "domain": [],
     "codomain": ["Update Y Prime Space", "Computation Time Metric Space"],
     "parameters_used": ["f_prime"],
