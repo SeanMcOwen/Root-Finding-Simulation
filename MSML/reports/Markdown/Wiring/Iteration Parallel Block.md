@@ -32,8 +32,8 @@ Block which updates X and logs the computation time taken.
 2. [[Log Computation Time Metric Mechanism]]
 
 ## All Blocks
-1. [[Update X Mechanism]]
-2. [[Log Computation Time Metric Mechanism]]
+1. [[Log Computation Time Metric Mechanism]]
+2. [[Update X Mechanism]]
 
 ## Constraints
 
@@ -45,10 +45,10 @@ Block which updates X and logs the computation time taken.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Update X Space]]
+1. [[Computation Time Metric Space]]
 2. [[Empty Space]]
 3. [[Terminating Space]]
-4. [[Computation Time Metric Space]]
+4. [[Update X Space]]
 
 ## Parameters Used
 

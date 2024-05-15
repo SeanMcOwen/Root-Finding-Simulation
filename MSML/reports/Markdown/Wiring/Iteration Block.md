@@ -38,9 +38,9 @@ Block which calculates one iteration.
 2. [[Iteration Parallel Block]]
 
 ## All Blocks
-1. [[Update X Mechanism]]
-2. [[Iteration Policy]]
-3. [[Log Computation Time Metric Mechanism]]
+1. [[Iteration Policy]]
+2. [[Log Computation Time Metric Mechanism]]
+3. [[Update X Mechanism]]
 
 ## Constraints
 
@@ -51,10 +51,10 @@ Block which calculates one iteration.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Empty Space]]
-2. [[Update X Space]]
+1. [[Computation Time Metric Space]]
+2. [[Empty Space]]
 3. [[Terminating Space]]
-4. [[Computation Time Metric Space]]
+4. [[Update X Space]]
 
 ## Parameters Used
 1. [[root_finding_method]]
