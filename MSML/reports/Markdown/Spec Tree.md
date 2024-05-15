@@ -7,11 +7,11 @@ cssclasses:
 │   ├──[[Global]]
 ├──**State**
 │   ├──[[Global State]]
-│   │   ├──X
-│   │   ├──Iteration Step
-│   │   ├──t
-│   │   ├──Y
-│   │   ├──Y Prime
+│   │   ├──[[Global State-X\|X]]
+│   │   ├──[[Global State-Iteration Step\|Iteration Step]]
+│   │   ├──[[Global State-t\|t]]
+│   │   ├──[[Global State-Y\|Y]]
+│   │   ├──[[Global State-Y Prime\|Y Prime]]
 ├──**Stateful Metrics**
 ├──**Types**
 │   ├──[[Number of Iterations Type]]

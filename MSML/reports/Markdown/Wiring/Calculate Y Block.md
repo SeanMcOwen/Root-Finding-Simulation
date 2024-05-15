@@ -51,10 +51,10 @@ Block which calculates and updates the Y value.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Terminating Space]]
-2. [[Computation Time Metric Space]]
-3. [[Update Y Space]]
-4. [[Empty Space]]
+1. [[Empty Space]]
+2. [[Update Y Space]]
+3. [[Computation Time Metric Space]]
+4. [[Terminating Space]]
 
 ## Parameters Used
 1. [[f]]
@@ -64,5 +64,5 @@ Block which calculates and updates the Y value.
 ## Calls
 
 ## All State Updates
-1. [[Global]].Y
+1. [[Global]].[[Global State-Y|Y]]
 

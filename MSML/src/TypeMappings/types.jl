@@ -1,7 +1,3 @@
-## Type
-### Python Type
-int
-### Julia Type
 const NumberIterationsType = Integer
 const ObjectiveValueType = Float32
 const ObjectiveDerivativeValueType = Float32
@@ -17,6 +13,3 @@ const ObjectiveDerivativeValueType = Float32
 #    "XType": float,
 #    "SecondsType": float,
 #    "ActionNameType": str,
-
-## Notes
-

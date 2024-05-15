@@ -11,4 +11,4 @@ Update the global state variable of Y to be equal to DOMAIN[0].Y
 
 ## Updates
 
-1. [[Global]].Y
+1. [[Global]].[[Global State-Y|Y]]

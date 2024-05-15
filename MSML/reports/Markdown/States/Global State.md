@@ -3,11 +3,11 @@
 ### Variable Table
 | Name | Description | Type | Symbol | Domain |
 | --- | --- | --- | --- | --- |
-|X||[[X Type]]|||
-|Iteration Step||[[Number of Iterations Type]]|||
-|t||[[Seconds Type]]|||
-|Y||[[Objective Value Type]]|||
-|Y Prime||[[Objective Derivative Value Type]]|||
+|[[Global State-X\|X]]||[[X Type]]|||
+|[[Global State-Iteration Step\|Iteration Step]]||[[Number of Iterations Type]]|||
+|[[Global State-t\|t]]||[[Seconds Type]]|||
+|[[Global State-Y\|Y]]||[[Objective Value Type]]|||
+|[[Global State-Y Prime\|Y Prime]]||[[Objective Derivative Value Type]]|||
 
 
 ## Updated By

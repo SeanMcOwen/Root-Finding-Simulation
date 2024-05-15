@@ -12,4 +12,4 @@ Change the global state variable of X to be equal to DOMAIN[0].X
 
 ## Updates
 
-1. [[Global]].X
+1. [[Global]].[[Global State-X|X]]

@@ -33,9 +33,9 @@ Block which handles the initialization.
 3. [[Set Simulation Time Mechanism]]
 
 ## All Blocks
-1. [[Initialization Control Action]]
-2. [[Set Simulation Time Mechanism]]
-3. [[Update X Mechanism]]
+1. [[Update X Mechanism]]
+2. [[Initialization Control Action]]
+3. [[Set Simulation Time Mechanism]]
 
 ## Constraints
 
@@ -45,9 +45,9 @@ Block which handles the initialization.
 1. [[Terminating Space]]
 
 ## All Spaces Used
-1. [[Terminating Space]]
-2. [[Update X Space]]
-3. [[Empty Space]]
+1. [[Update X Space]]
+2. [[Empty Space]]
+3. [[Terminating Space]]
 
 ## Parameters Used
 
@@ -56,6 +56,6 @@ Block which handles the initialization.
 ## Calls
 
 ## All State Updates
-1. [[Global]].X
-2. [[Global]].t
+1. [[Global]].[[Global State-X|X]]
+2. [[Global]].[[Global State-t|t]]
 

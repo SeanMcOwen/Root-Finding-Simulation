@@ -11,4 +11,4 @@ Update the global state variable of Y Prime to be equal to DOMAIN[0].Y Prime
 
 ## Updates
 
-1. [[Global]].Y Prime
+1. [[Global]].[[Global State-Y Prime|Y Prime]]

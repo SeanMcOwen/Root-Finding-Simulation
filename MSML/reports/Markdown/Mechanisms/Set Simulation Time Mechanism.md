@@ -10,4 +10,4 @@ state['simulation_time'] = now()
 
 ## Updates
 
-1. [[Global]].t
+1. [[Global]].[[Global State-t|t]]

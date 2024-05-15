@@ -73,11 +73,11 @@ Block which updates the Y, Y Prime, and the iteration step.
 3. [[Increment Iteration Step Mechanism]]
 
 ## All Blocks
-1. [[Log Computation Time Metric Mechanism]]
+1. [[Update Y Prime Mechanism]]
 2. [[Calculate Y Prime Policy]]
-3. [[Update Y Prime Mechanism]]
-4. [[Calculate Y Policy]]
-5. [[Update Y Mechanism]]
+3. [[Calculate Y Policy]]
+4. [[Update Y Mechanism]]
+5. [[Log Computation Time Metric Mechanism]]
 6. [[Increment Iteration Step Mechanism]]
 
 ## Constraints
@@ -89,11 +89,11 @@ Block which updates the Y, Y Prime, and the iteration step.
 1. [[Empty Space]]
 
 ## All Spaces Used
-1. [[Update Y Space]]
-2. [[Update Y Prime Space]]
-3. [[Terminating Space]]
+1. [[Terminating Space]]
+2. [[Empty Space]]
+3. [[Update Y Space]]
 4. [[Computation Time Metric Space]]
-5. [[Empty Space]]
+5. [[Update Y Prime Space]]
 
 ## Parameters Used
 1. [[f_prime]]
@@ -104,7 +104,7 @@ Block which updates the Y, Y Prime, and the iteration step.
 ## Calls
 
 ## All State Updates
-1. [[Global]].Iteration Step
-2. [[Global]].Y
-3. [[Global]].Y Prime
+1. [[Global]].[[Global State-Iteration Step|Iteration Step]]
+2. [[Global]].[[Global State-Y|Y]]
+3. [[Global]].[[Global State-Y Prime|Y Prime]]
 
