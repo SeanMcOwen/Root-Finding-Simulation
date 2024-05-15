@@ -196,10 +196,10 @@ Block which encapsulates the full simulation.
 6. [[Update Y Space]]
 
 ## Parameters Used
-1. [[max_iterations]]
+1. [[f]]
 2. [[f_prime]]
-3. [[root_finding_method]]
-4. [[f]]
+3. [[max_iterations]]
+4. [[root_finding_method]]
 
 ## Called By
 
