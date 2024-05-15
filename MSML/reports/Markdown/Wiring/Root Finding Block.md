@@ -134,10 +134,10 @@ Block which handles all aspects of using the root finding algorithm.
 6. [[Update Y Space]]
 
 ## Parameters Used
-1. [[f]]
+1. [[f_prime]]
 2. [[max_iterations]]
 3. [[root_finding_method]]
-4. [[f_prime]]
+4. [[f]]
 
 ## Called By
 

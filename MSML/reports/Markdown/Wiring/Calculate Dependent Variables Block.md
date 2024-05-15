@@ -96,8 +96,8 @@ Block which updates the Y, Y Prime, and the iteration step.
 5. [[Update Y Space]]
 
 ## Parameters Used
-1. [[f]]
-2. [[f_prime]]
+1. [[f_prime]]
+2. [[f]]
 
 ## Called By
 
