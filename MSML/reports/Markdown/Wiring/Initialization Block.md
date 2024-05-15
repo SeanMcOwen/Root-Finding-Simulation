@@ -5,9 +5,9 @@ graph TB
 
 subgraph SVS["State Variables"]
 EE0[("Global")]
-EES0(["t"])
+EES0(["X"])
 EES0 --- EE0
-EES1(["X"])
+EES1(["t"])
 EES1 --- EE0
 end
 
@@ -15,9 +15,9 @@ subgraph X4["Initialization Block"]
 direction TB
 X1["Initialization Control Action"]
 X2["Update X Mechanism"]
-X2 --> EES1
+X2 --> EES0
 X3["Set Simulation Time Mechanism"]
-X3 --> EES0
+X3 --> EES1
 X1--"Update X Space"--->X2
 X2--->X3
 end
@@ -56,6 +56,6 @@ Block which handles the initialization.
 ## Calls
 
 ## All State Updates
-1. [[Global]].[[Global State-t|t]]
-2. [[Global]].[[Global State-X|X]]
+1. [[Global]].[[Global State-X|X]]
+2. [[Global]].[[Global State-t|t]]
 

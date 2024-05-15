@@ -5,15 +5,15 @@ graph TB
 
 subgraph SVS["State Variables"]
 EE0[("Global")]
-EES0(["Y"])
+EES0(["Iteration Step"])
 EES0 --- EE0
 EES1(["X"])
 EES1 --- EE0
-EES2(["Iteration Step"])
+EES2(["Y"])
 EES2 --- EE0
-EES3(["t"])
+EES3(["Y Prime"])
 EES3 --- EE0
-EES4(["Y Prime"])
+EES4(["t"])
 EES4 --- EE0
 end
 
@@ -25,7 +25,7 @@ X1["Initialization Control Action"]
 X2["Update X Mechanism"]
 X2 --> EES1
 X3["Set Simulation Time Mechanism"]
-X3 --> EES3
+X3 --> EES4
 X1--"Update X Space"--->X2
 X2--->X3
 end
@@ -37,7 +37,7 @@ X5["Calculate Y Policy"]
 subgraph X10[" "]
 direction TB
 X6["Update Y Mechanism"]
-X6 --> EES0
+X6 --> EES2
 X7["Log Computation Time Metric Mechanism"]
 X8[Domain]
 
@@ -55,7 +55,7 @@ X12["Calculate Y Prime Policy"]
 subgraph X17[" "]
 direction TB
 X13["Update Y Prime Mechanism"]
-X13 --> EES0-Prime
+X13 --> EES2-Prime
 X14["Log Computation Time Metric Mechanism"]
 X15[Domain]
 
@@ -68,7 +68,7 @@ X12--"Update Y Prime Space
 Computation Time Metric Space"---->X17
 end
 X19["Increment Iteration Step Mechanism"]
-X19 --> EES2
+X19 --> EES0
 X20[Domain]
 
 direction LR
@@ -106,7 +106,7 @@ X31["Calculate Y Policy"]
 subgraph X36[" "]
 direction TB
 X32["Update Y Mechanism"]
-X32 --> EES0
+X32 --> EES2
 X33["Log Computation Time Metric Mechanism"]
 X34[Domain]
 
@@ -124,7 +124,7 @@ X38["Calculate Y Prime Policy"]
 subgraph X43[" "]
 direction TB
 X39["Update Y Prime Mechanism"]
-X39 --> EES0-Prime
+X39 --> EES2-Prime
 X40["Log Computation Time Metric Mechanism"]
 X41[Domain]
 
@@ -137,7 +137,7 @@ X38--"Update Y Prime Space
 Computation Time Metric Space"---->X43
 end
 X45["Increment Iteration Step Mechanism"]
-X45 --> EES2
+X45 --> EES0
 X46[Domain]
 
 direction LR
@@ -147,7 +147,7 @@ X46 --> X44
 X46 --> X45
 end
 X49["Set Simulation Time Mechanism"]
-X49 --> EES3
+X49 --> EES4
 X23-.->X30
 X30--->X48
 X48--->X49
@@ -197,18 +197,18 @@ Block which encapsulates the full simulation.
 
 ## Parameters Used
 1. [[f]]
-2. [[root_finding_method]]
-3. [[max_iterations]]
-4. [[f_prime]]
+2. [[max_iterations]]
+3. [[f_prime]]
+4. [[root_finding_method]]
 
 ## Called By
 
 ## Calls
 
 ## All State Updates
-1. [[Global]].[[Global State-Y|Y]]
+1. [[Global]].[[Global State-Iteration Step|Iteration Step]]
 2. [[Global]].[[Global State-X|X]]
-3. [[Global]].[[Global State-Iteration Step|Iteration Step]]
-4. [[Global]].[[Global State-t|t]]
-5. [[Global]].[[Global State-Y Prime|Y Prime]]
+3. [[Global]].[[Global State-Y|Y]]
+4. [[Global]].[[Global State-Y Prime|Y Prime]]
+5. [[Global]].[[Global State-t|t]]
 
