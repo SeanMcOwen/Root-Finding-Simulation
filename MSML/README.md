@@ -33,11 +33,11 @@
 │   ├──State Metric Space
 ├──Parameters
 │   ├──Iteration Parameter Set
-│   │   ├──[[max_iterations]]
-│   │   ├──[[tolerance]]
-│   │   ├──[[f]]
-│   │   ├──[[f_prime]]
-│   │   ├──[[root_finding_method]]
+│   │   ├──max_iterations
+│   │   ├──tolerance
+│   │   ├──f
+│   │   ├──f_prime
+│   │   ├──root_finding_method
 ├──Boundary Actions
 ├──Control Actions
 │   ├──Initialization Control Action

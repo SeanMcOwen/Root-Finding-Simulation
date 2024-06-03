@@ -1,4 +1,4 @@
-from .types import XType, ActionNameType, NumberIterationsType, ObjectiveDerivativeValueType, SecondsType, ObjectiveValueType
+from .types import ObjectiveDerivativeValueType, XType, ActionNameType, NumberIterationsType, ObjectiveValueType, SecondsType
 from typing import TypedDict
 
 TerminatingSpace = TypedDict('Terminating Space', {})
